@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { useABTestVariant, AB_TEST_CONFIG, trackCTAView, trackCTAClick } from "@/lib/ab-testing";
 import { useEffect } from "react";
+import { Trees, HardHat, Wrench } from "lucide-react";
 
 export default function HeroSection() {
   const { variant, isLoading } = useABTestVariant();
@@ -29,6 +30,22 @@ export default function HeroSection() {
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted/30 text-foreground pt-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto text-center">
+          {/* Service Industry Icons */}
+          <div className="flex justify-center items-center gap-8 mb-8" aria-label="Service industries we serve">
+            <div className="flex flex-col items-center gap-2">
+              <Trees className="w-12 h-12 text-primary" aria-hidden="true" />
+              <span className="text-sm text-muted-foreground font-medium">Landscaping</span>
+            </div>
+            <div className="flex flex-col items-center gap-2">
+              <HardHat className="w-12 h-12 text-primary" aria-hidden="true" />
+              <span className="text-sm text-muted-foreground font-medium">Construction</span>
+            </div>
+            <div className="flex flex-col items-center gap-2">
+              <Wrench className="w-12 h-12 text-primary" aria-hidden="true" />
+              <span className="text-sm text-muted-foreground font-medium">Field Services</span>
+            </div>
+          </div>
+          
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight">
             Stop Fighting Outdated Software. Start Building Your Future.
           </h1>
