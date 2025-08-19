@@ -4,15 +4,15 @@ export default function StructuredData() {
     "@type": "Organization",
     "name": "Bedrock Innovations",
     "description": "We build custom, end-to-end AI solutions for service industry leaders in landscaping, construction, and field services who are tired of clunky, overpriced systems that aren't innovating fast enough.",
-    "url": "https://bedrocklanding.vercel.app",
-    "logo": "https://bedrocklanding.vercel.app/og-image.png",
+    "url": "https://bedrock-innovations.com",
+    "logo": "https://bedrock-innovations.com/og-image.png",
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "sales",
-      "email": "team@bedrockinnov.com"
+      "email": "team@bedrock-innovations.com"
     },
     "sameAs": [
-      "https://twitter.com/bedrockinnov",
+      "https://twitter.com/bedrockinnovations",
       "https://linkedin.com/company/bedrock-innovations"
     ],
     "foundingDate": "2024",

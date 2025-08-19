@@ -485,11 +485,21 @@ function HeroSection() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-lg sm:text-xl md:text-2xl mb-8 max-w-4xl mx-auto text-muted-foreground leading-relaxed",
-                            children: "We build custom, end-to-end AI solutions for service industry leaders in landscaping, construction, and field services who are tired of clunky, overpriced systems that aren't innovating fast enough."
-                        }, void 0, false, {
+                            children: [
+                                "If your software feels like it was built 10 years ago -- or isn't innovating fast enough -- ",
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
+                                    children: "then it's time to upgrade"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/sections/HeroSection.tsx",
+                                    lineNumber: 53,
+                                    columnNumber: 118
+                                }, this),
+                                "."
+                            ]
+                        }, void 0, true, {
                             fileName: "[project]/components/sections/HeroSection.tsx",
                             lineNumber: 52,
-                            columnNumber: 11
+                            columnNumber: 29
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex justify-center items-center",

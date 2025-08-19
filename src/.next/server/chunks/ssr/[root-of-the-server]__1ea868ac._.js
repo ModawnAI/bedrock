@@ -72,11 +72,11 @@ const metadata = {
     ],
     creator: "Bedrock Innovations",
     publisher: "Bedrock Innovations",
-    metadataBase: new URL("https://bedrocklanding.vercel.app"),
+    metadataBase: new URL("https://bedrock-innovations.com"),
     openGraph: {
         type: "website",
         locale: "en_US",
-        url: "https://bedrocklanding.vercel.app",
+        url: "https://bedrock-innovations.com",
         siteName: "Bedrock Innovations",
         title: "Bedrock Innovations - Custom AI Solutions for Service Industries",
         description: "We build custom, end-to-end AI solutions for service industry leaders in landscaping, construction, and field services who are tired of clunky, overpriced systems that aren't innovating fast enough.",
@@ -97,8 +97,8 @@ const metadata = {
         images: [
             "/og-image.png"
         ],
-        creator: "@bedrockinnov",
-        site: "@bedrockinnov"
+        creator: "@bedrockinnovations",
+        site: "@bedrockinnovations"
     },
     robots: {
         index: true,

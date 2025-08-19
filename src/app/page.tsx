@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/sections/HeroSection";
 import CredibilityBar from "@/components/sections/CredibilityBar";
+import StrategicInsightSection from "@/components/sections/StrategicInsightSection";
 import ProblemSection from "@/components/sections/ProblemSection";
 import SolutionSection from "@/components/sections/SolutionSection";
 import ProcessSection from "@/components/sections/ProcessSection";
@@ -35,14 +36,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://bedrocklanding.vercel.app"),
+  metadataBase: new URL("https://bedrock-innovations.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://bedrocklanding.vercel.app",
+    url: "https://bedrock-innovations.com",
     siteName: "Bedrock Innovations",
     title: "Bedrock Innovations - Custom AI Solutions for Service Industries",
     description: "We build custom, end-to-end AI solutions for service industry leaders in landscaping, construction, and field services who are tired of clunky, overpriced systems that aren't innovating fast enough.",
@@ -61,8 +62,8 @@ export const metadata: Metadata = {
     title: "Bedrock Innovations - Custom AI Solutions for Service Industries",
     description: "We build custom, end-to-end AI solutions for service industry leaders in landscaping, construction, and field services who are tired of clunky, overpriced systems that aren't innovating fast enough.",
     images: ["/og-image.png"],
-    creator: "@bedrockinnov",
-    site: "@bedrockinnov",
+    creator: "@bedrockinnovations",
+    site: "@bedrockinnovations",
   },
   robots: {
     index: true,
@@ -94,6 +95,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <CredibilityBar />
+        <StrategicInsightSection />
         <ProblemSection />
         <SolutionSection />
         <ProcessSection />

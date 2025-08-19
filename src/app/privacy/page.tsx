@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Privacy Policy | Bedrock Innovations",
     description: "Privacy Policy for Bedrock Innovations LLC - How we collect, use, and protect your personal information when using our custom AI solutions and services.",
-    url: "https://bedrocklanding.vercel.app/privacy",
+    url: "https://bedrock-innovations.com/privacy",
     images: ["/og-image.png"],
   },
   robots: {
@@ -206,8 +206,8 @@ export default function PrivacyPolicy() {
                   </p>
                   <div className="mt-4 p-4 bg-muted rounded-lg">
                     <p className="font-medium">Bedrock Innovations LLC</p>
-                    <p className="text-muted-foreground">Email: team@bedrockinnov.com</p>
-                    <p className="text-muted-foreground">Website: bedrockinnov.com</p>
+                    <p className="text-muted-foreground">Email: team@bedrock-innovations.com</p>
+                    <p className="text-muted-foreground">Website: bedrock-innovations.com</p>
                     <p className="text-muted-foreground mt-2">
                       For privacy-related inquiries, please include "Privacy Policy" in your subject line.
                     </p>

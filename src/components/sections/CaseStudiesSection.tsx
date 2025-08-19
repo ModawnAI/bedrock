@@ -68,9 +68,11 @@ export default function CaseStudiesSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-sm sm:text-base mb-2">The Impact</h4>
-                    <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                      90% reduction in proposal time, 40% increase in bid volume, and 25% higher win rate due to faster response times and more competitive pricing.
-                    </p>
+                    <ul className="text-muted-foreground text-sm sm:text-base leading-relaxed space-y-1">
+                      <li>• <strong>90% reduction</strong> in proposal time</li>
+                      <li>• <strong>40% increase</strong> in bid volume</li>
+                      <li>• <strong>25% higher win rate</strong> due to faster response times and more competitive pricing</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -122,9 +124,11 @@ export default function CaseStudiesSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-sm sm:text-base mb-2">The Impact</h4>
-                    <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                      25% reduction in material costs, zero stockouts in 6 months, and improved cash flow through optimized ordering schedules.
-                    </p>
+                    <ul className="text-muted-foreground text-sm sm:text-base leading-relaxed space-y-1">
+                      <li>• <strong>25% reduction</strong> in material costs</li>
+                      <li>• <strong>Zero stockouts</strong> in 6 months</li>
+                      <li>• <strong>Improved cash flow</strong> through optimized ordering schedules</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -176,9 +180,11 @@ export default function CaseStudiesSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-sm sm:text-base mb-2">The Impact</h4>
-                    <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                      300% increase in qualified appointments, 45% improvement in lead-to-customer conversion rate, and freed up 15 hours per week for the sales team to focus on closing deals.
-                    </p>
+                    <ul className="text-muted-foreground text-sm sm:text-base leading-relaxed space-y-1">
+                      <li>• <strong>300% increase</strong> in qualified appointments</li>
+                      <li>• <strong>45% improvement</strong> in lead-to-customer conversion rate</li>
+                      <li>• <strong>Freed up 15 hours per week</strong> for the sales team to focus on closing deals</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -230,9 +236,11 @@ export default function CaseStudiesSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-sm sm:text-base mb-2">The Impact</h4>
-                    <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                      60% reduction in discovery time, 80% fewer change orders, and 35% increase in client satisfaction scores due to more accurate initial scoping and expectations setting.
-                    </p>
+                    <ul className="text-muted-foreground text-sm sm:text-base leading-relaxed space-y-1">
+                      <li>• <strong>60% reduction</strong> in discovery time</li>
+                      <li>• <strong>80% fewer</strong> change orders</li>
+                      <li>• <strong>35% increase</strong> in client satisfaction scores due to more accurate initial scoping</li>
+                    </ul>
                   </div>
                 </div>
               </div>

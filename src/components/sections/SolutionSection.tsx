@@ -7,7 +7,7 @@ export default function SolutionSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 leading-tight">
-            A Tool Built for You. And Only You.
+            Real AI Solutions That Transform Real Businesses
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             Bedrock Innovations doesn&apos;t sell you a one-size-fits-all product. We become your dedicated development partner, building a lean, powerful AI system around your exact processes. The result? A tool so intuitive your team can use it on day one—with little to no learning curve. We deliver a measurable impact on your efficiency and your bottom line. Our commitment is backed by a simple guarantee: we will never keep or use your data.

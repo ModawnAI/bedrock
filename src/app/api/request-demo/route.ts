@@ -147,8 +147,8 @@ export async function POST(request: NextRequest) {
 
     // Send email using Resend
     const emailResult = await resend.emails.send({
-      from: "Demo Requests <noreply@bedrockinnov.com>", // Update with your verified domain
-      to: ["team@bedrockinnov.com"], // Update with your team email
+      from: "Demo Requests <noreply@bedrock-innovations.com>", // Update with your verified domain
+      to: ["team@bedrock-innovations.com"], // Update with your team email
       subject: `New Demo Request from ${validatedData.fullName} at ${validatedData.companyName}`,
       html: htmlContent,
       replyTo: validatedData.workEmail,

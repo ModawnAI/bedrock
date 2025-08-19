@@ -49,9 +49,9 @@ export default function HeroSection() {
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight">
             Stop Fighting Outdated Software. Start Building Your Future.
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl mb-8 max-w-4xl mx-auto text-muted-foreground leading-relaxed">
-            We build custom, end-to-end AI solutions for service industry leaders in landscaping, construction, and field services who are tired of clunky, overpriced systems that aren&apos;t innovating fast enough.
-          </p>
+                            <p className="text-lg sm:text-xl md:text-2xl mb-8 max-w-4xl mx-auto text-muted-foreground leading-relaxed">
+                    If your software feels like it was built 10 years ago -- or isn&apos;t innovating fast enough -- <em>then it&apos;s time to upgrade</em>.
+                  </p>
           <div className="flex justify-center items-center">
             <Button 
               size="lg" 

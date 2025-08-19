@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Terms of Service | Bedrock Innovations",
     description: "Terms of Service for Bedrock Innovations LLC - Custom AI Solutions for Service Industries. Review our terms and conditions for using our AI development services.",
-    url: "https://bedrocklanding.vercel.app/terms",
+    url: "https://bedrock-innovations.com/terms",
     images: ["/og-image.png"],
   },
   robots: {
@@ -149,8 +149,8 @@ export default function TermsOfService() {
                   </p>
                   <div className="mt-4 p-4 bg-muted rounded-lg">
                     <p className="font-medium">Bedrock Innovations LLC</p>
-                    <p className="text-muted-foreground">Email: team@bedrockinnov.com</p>
-                    <p className="text-muted-foreground">Website: bedrockinnov.com</p>
+                    <p className="text-muted-foreground">Email: team@bedrock-innovations.com</p>
+                    <p className="text-muted-foreground">Website: bedrock-innovations.com</p>
                   </div>
                 </section>
               </div>

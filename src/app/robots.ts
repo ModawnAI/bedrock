@@ -17,6 +17,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: '/',
       },
     ],
-    sitemap: 'https://bedrockinnov.com/api/sitemap',
+    sitemap: 'https://bedrock-innovations.com/api/sitemap',
   }
 }
