@@ -7,6 +7,13 @@ const inter = Inter({
   variable: "--font-sans",
 });
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
+};
+
 export const metadata: Metadata = {
   title: {
     default: "Bedrock Innovations - Custom AI Solutions for Service Industries",
