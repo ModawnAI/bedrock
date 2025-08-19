@@ -32,6 +32,9 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
+# Cursor MCP configuration (contains API keys)
+.cursor/mcp.json
+
 # Vercel
 .vercel
 
