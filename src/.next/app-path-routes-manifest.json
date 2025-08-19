@@ -1,10 +1,10 @@
 {
   "/api/sitemap/route": "/api/sitemap",
-  "/_not-found/page": "/_not-found",
-  "/robots.txt/route": "/robots.txt",
   "/sitemap.xml/route": "/sitemap.xml",
   "/api/request-demo/route": "/api/request-demo",
-  "/terms/page": "/terms",
+  "/robots.txt/route": "/robots.txt",
+  "/_not-found/page": "/_not-found",
+  "/privacy/page": "/privacy",
   "/page": "/",
-  "/privacy/page": "/privacy"
+  "/terms/page": "/terms"
 }
