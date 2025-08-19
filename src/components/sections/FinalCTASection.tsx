@@ -1,0 +1,207 @@
+"use client"
+
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
+import { contactFormSchema, type ContactFormData } from "@/lib/schemas";
+import { useABTestVariant, trackConversion } from "@/lib/ab-testing";
+
+export default function FinalCTASection() {
+  const { variant } = useABTestVariant();
+  
+  const form = useForm<ContactFormData>({
+    resolver: zodResolver(contactFormSchema),
+    defaultValues: {
+      fullName: "",
+      companyName: "",
+      role: "",
+      workEmail: "",
+      challenge: "",
+    },
+    mode: "onChange", // Enable real-time validation
+  });
+
+  const onSubmit = async (data: ContactFormData) => {
+    try {
+      const response = await fetch("/api/request-demo", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || "Failed to submit form");
+      }
+
+      const result = await response.json();
+      console.log("Form submitted successfully:", result);
+      
+      // Track conversion for A/B testing
+      trackConversion(variant, 'form_submit');
+      
+      alert("Thank you! We'll get back to you within one business day.");
+      form.reset();
+    } catch (error) {
+      console.error("Form submission error:", error);
+      alert("There was an error submitting the form. Please try again.");
+    }
+  };
+
+  return (
+    <section id="contact" className="py-16 sm:py-20 lg:py-24 bg-muted/50">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center max-w-6xl mx-auto">
+          <div className="text-center lg:text-left">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight">
+              Your Transformation Starts Here. See What a Custom AI Could Do For You.
+            </h2>
+            <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8 leading-relaxed">
+              Tell us about your biggest operational headache. We&apos;ll show you how to solve it with a free, no-obligation custom demo.
+            </p>
+          </div>
+          
+          <Card className="shadow-lg">
+            <CardContent className="p-6 sm:p-8">
+              <Form {...form}>
+                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 sm:space-y-6">
+                  <FormField
+                    control={form.control}
+                    name="fullName"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className="text-xs sm:text-sm">
+                          Full Name *
+                        </FormLabel>
+                        <FormControl>
+                          <Input
+                            placeholder="Enter your full name"
+                            className="text-sm sm:text-base"
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  
+                  <FormField
+                    control={form.control}
+                    name="companyName"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className="text-xs sm:text-sm">
+                          Company Name *
+                        </FormLabel>
+                        <FormControl>
+                          <Input
+                            placeholder="Enter your company name"
+                            className="text-sm sm:text-base"
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  
+                  <FormField
+                    control={form.control}
+                    name="role"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className="text-xs sm:text-sm">
+                          Your Role/Title *
+                        </FormLabel>
+                        <FormControl>
+                          <Input
+                            placeholder="e.g., CEO, Operations Manager, Owner"
+                            className="text-sm sm:text-base"
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  
+                  <FormField
+                    control={form.control}
+                    name="workEmail"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className="text-xs sm:text-sm">
+                          Work Email *
+                        </FormLabel>
+                        <FormControl>
+                          <Input
+                            type="email"
+                            placeholder="Enter your work email"
+                            className="text-sm sm:text-base"
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  
+                  <FormField
+                    control={form.control}
+                    name="challenge"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className="text-xs sm:text-sm">
+                          What&apos;s the main operational challenge you want to solve? *
+                        </FormLabel>
+                        <FormControl>
+                          <Textarea
+                            rows={4}
+                            placeholder="Describe your biggest operational headache..."
+                            className="resize-none text-sm sm:text-base"
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  
+                  <Button
+                    type="submit"
+                    size="lg"
+                    className="w-full text-sm sm:text-base py-3 sm:py-4 h-auto shadow-lg"
+                    disabled={form.formState.isSubmitting}
+                  >
+                    {form.formState.isSubmitting ? "Submitting..." : "Get My Free Demo"}
+                  </Button>
+                  
+                  <p className="text-xs sm:text-sm text-muted-foreground text-center leading-relaxed">
+                    We&apos;ll get back to you within one business day to schedule a brief, no-pressure discovery call. We will never share your information or send you spam.
+                  </p>
+                  
+                  <p className="text-xs text-muted-foreground text-center leading-relaxed">
+                    <a href="/terms" className="underline hover:no-underline">Terms of service</a> and <a href="/privacy" className="underline hover:no-underline">privacy policy</a>. We reassure whatever they share we won&apos;t share with other competitors.
+                  </p>
+                </form>
+              </Form>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </section>
+  );
+}

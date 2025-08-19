@@ -1,0 +1,48 @@
+---
+description: Guidelines for using shadcn/ui components with the installed MCP server
+globs: **/*.tsx, **/*.ts, components/**/*
+alwaysApply: true
+---
+
+- **shadcn/ui Component Usage:**
+  - Always use the installed MCP server for shadcn/ui components
+  - MCP server is configured as: `npx @jpisnice/shadcn-ui-mcp-server --github-api-key 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`
+  - Use MCP tools to get component source code and examples before implementation
+
+- **Component Integration Process:**
+  ```typescript
+  // ✅ DO: Use MCP tools to get component details first
+  // 1. Get component source via MCP
+  // 2. Get component demo/examples via MCP  
+  // 3. Implement with proper imports and usage
+  
+  import { Button } from "@/components/ui/button"
+  import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+  ```
+
+- **Required Steps for shadcn/ui Components:**
+  1. **Research First**: Use MCP server to get component source and demos
+  2. **Install Properly**: Follow MCP-provided installation instructions
+  3. **Import Correctly**: Use standard shadcn/ui import patterns
+  4. **Follow Examples**: Implement based on MCP-provided demo code
+
+- **Common Components for Bedrock Landing:**
+  - `Button` - For CTAs and navigation
+  - `Card` - For feature sections, team bios, case studies
+  - `Input`, `Label`, `Textarea` - For contact forms
+  - `Accordion` - For FAQ sections
+  - `Avatar` - For team member photos
+
+- **Best Practices:**
+  - Always check component metadata via MCP before usage
+  - Use proper TypeScript types from shadcn/ui
+  - Follow accessibility patterns from MCP examples
+  - Leverage variant props for consistent styling
+
+- **Integration with Project:**
+  - Components inherit oklch CSS variable theme automatically
+  - Use with Tailwind CSS classes for additional styling
+  - Ensure responsive behavior across all breakpoints
+  - Test keyboard navigation and screen reader compatibility
+
+**Reference**: Use MCP server tools to access latest shadcn/ui v4 components and examples.

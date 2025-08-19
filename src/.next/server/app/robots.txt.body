@@ -1,0 +1,18 @@
+User-Agent: *
+Allow: /
+Crawl-delay: 1
+
+User-Agent: Googlebot
+User-Agent: Bingbot
+User-Agent: Slurp
+User-Agent: DuckDuckBot
+User-Agent: Baiduspider
+User-Agent: YandexBot
+Allow: /
+
+User-Agent: AhrefsBot
+User-Agent: MJ12bot
+User-Agent: DotBot
+Disallow: /
+
+Sitemap: https://bedrockinnov.com/api/sitemap

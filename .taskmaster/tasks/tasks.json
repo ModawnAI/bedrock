@@ -1,0 +1,905 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": 16,
+        "title": "Initialize Next.js 14+ Project with TypeScript",
+        "description": "Set up the project repository using Next.js 14+ with the App Router and TypeScript, ensuring all required dependencies are installed.",
+        "details": "Run `npx create-next-app@latest bedrock-landing --typescript --experimental-app`.\nInstall Tailwind CSS v4 (`npm install tailwindcss@latest postcss@latest autoprefixer@latest`), shadcn/ui (`npx shadcn-ui@latest init`), Lucide React (`npm install lucide-react@latest`), React Hook Form (`npm install react-hook-form@latest`), Zod (`npm install zod@latest`), and Resend (`npm install resend@latest`).\nConfigure Tailwind and shadcn/ui according to their latest documentation.",
+        "testStrategy": "Verify project boots locally, all dependencies are installed, and the initial page renders without errors.",
+        "priority": "high",
+        "dependencies": [],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create Next.js Project with TypeScript and App Router",
+            "description": "Initialize a new Next.js project using the create-next-app CLI, ensuring TypeScript and the App Router are enabled.",
+            "dependencies": [],
+            "details": "Run `npx create-next-app@latest` and select 'Yes' for TypeScript and App Router when prompted. Confirm the project structure includes the 'app' directory.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Install Tailwind CSS v4",
+            "description": "Add Tailwind CSS v4 to the Next.js project following the official installation steps.",
+            "dependencies": [
+              1
+            ],
+            "details": "Install Tailwind CSS and its peer dependencies, then initialize the Tailwind config files. Ensure Tailwind is integrated with Next.js.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Install and Configure shadcn/ui",
+            "description": "Set up shadcn/ui in the project, following its documentation for installation and initial configuration.",
+            "dependencies": [
+              2
+            ],
+            "details": "Install shadcn/ui via npm or yarn, run its initialization command, and follow prompts to configure it for the project.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 4,
+            "title": "Install Lucide React, React Hook Form, Zod, and Resend",
+            "description": "Install the required libraries for icons, form handling, validation, and email sending.",
+            "dependencies": [
+              3
+            ],
+            "details": "Use npm or yarn to install lucide-react, react-hook-form, zod, and resend as dependencies in the project.\n<info added on 2025-08-19T05:21:54.545Z>\nSuccessfully completed dependency installation with the following packages:\n\n- lucide-react: Installed for icons throughout the landing page\n- react-hook-form: Installed for form state management in the contact form  \n- zod: Installed for schema validation on both client and server\n- resend: Installed for email API integration\n- @hookform/resolvers: Installed for connecting Zod with React Hook Form\n\nInstallation completed without security vulnerabilities. Build test executed successfully, confirming all dependencies are properly integrated and the project remains stable.\n</info added on 2025-08-19T05:21:54.545Z>",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 5,
+            "title": "Configure Tailwind and shadcn/ui According to Documentation",
+            "description": "Adjust Tailwind and shadcn/ui configuration files to match best practices and project requirements.",
+            "dependencies": [
+              4
+            ],
+            "details": "Edit tailwind.config.js and shadcn/ui config files as needed, ensuring theme, plugins, and paths are set per documentation.\n<info added on 2025-08-19T05:21:58.504Z>\nConfiguration completed successfully with all required setup verified:\n\nNext.js 15.4.7 with App Router and TypeScript integration confirmed working\nTailwind CSS v4 implemented with oklch CSS variable theme system\nshadcn/ui successfully configured with neutral base color scheme and CSS variables\nAll project dependencies properly installed and verified functional\nProject builds without errors, confirming proper configuration\ncomponents.json properly configured with correct aliases and Lucide icons integration\n\nProject foundation is now ready for development with all core systems properly integrated and tested.\n</info added on 2025-08-19T05:21:58.504Z>",
+            "status": "done",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "title": "Implement oklch CSS Variable Theme in app/globals.css",
+        "description": "Apply the mandatory oklch CSS variable theme for consistent color and style palette across the application.",
+        "details": "Add the provided oklch CSS variables to `app/globals.css`.\nEnsure Tailwind config uses these variables for color classes.\nTest inheritance in shadcn/ui components.",
+        "testStrategy": "Check rendered components for correct color usage and contrast. Use Chrome Lighthouse to verify color contrast meets WCAG 2.1 AA.",
+        "priority": "high",
+        "dependencies": [
+          16
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Add OKLCH CSS Variables to globals.css",
+            "description": "Define OKLCH color variables in the globals.css file to establish a consistent color palette accessible throughout the project.",
+            "dependencies": [],
+            "details": "Copy or generate OKLCH color variables (e.g., --color-primary-500: oklch(...);) and add them to the :root selector in globals.css. Ensure all required color shades are included for use in Tailwind and custom CSS.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Update Tailwind Config to Use OKLCH Variables",
+            "description": "Configure Tailwind to reference the newly defined OKLCH CSS variables for its color utilities.",
+            "dependencies": [
+              1
+            ],
+            "details": "Modify tailwind.config.js to use the OKLCH CSS variables for color definitions, using the oklch(var(--color-primary-500) / <alpha-value>) syntax for each color and shade needed.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Test Color Inheritance in shadcn/ui Components",
+            "description": "Verify that shadcn/ui components correctly inherit and display colors from the OKLCH CSS variables via Tailwind classes.",
+            "dependencies": [
+              2
+            ],
+            "details": "Render various shadcn/ui components in the application, applying Tailwind color classes that reference the OKLCH variables. Check that the components reflect the intended colors and that inheritance works as expected.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 4,
+            "title": "Verify Color Contrast with Lighthouse",
+            "description": "Run Lighthouse accessibility audits to ensure that the new OKLCH-based color palette meets contrast and accessibility standards.",
+            "dependencies": [
+              3
+            ],
+            "details": "Use Lighthouse in Chrome DevTools to audit pages using the updated color scheme. Review and address any color contrast issues reported, adjusting OKLCH values if necessary to achieve compliance.",
+            "status": "done",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "title": "Scaffold All 10 Landing Page Sections as React Components",
+        "description": "Create placeholder React components for each of the 10 sections, following the PRD’s structure and naming conventions.",
+        "details": "Create components: HeroSection, CredibilityBar, ProblemSection, SolutionSection, ProcessSection, CaseStudiesSection, TeamSection, TestimonialSection, FAQSection, FinalCTASection.\nUse semantic HTML5 tags (<nav>, <main>, <section>, etc.) and ARIA roles as needed.",
+        "testStrategy": "Render all components in the main page, verify correct structure and accessibility tree using browser dev tools.",
+        "priority": "high",
+        "dependencies": [
+          17
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create Placeholder Components for Each Section",
+            "description": "Develop basic placeholder components representing each major section of the application (e.g., Header, Main, Footer, Navigation, Sidebar) using a consistent naming convention.",
+            "dependencies": [],
+            "details": "Each component should be a minimal functional or class-based component with a clear, descriptive name. No styling or logic is required at this stage—focus on structure only.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Integrate Semantic HTML5 Elements and ARIA Roles",
+            "description": "Update each placeholder component to use appropriate semantic HTML5 elements (such as <header>, <nav>, <main>, <footer>, <aside>) and add ARIA roles only where necessary for accessibility.",
+            "dependencies": [
+              1
+            ],
+            "details": "Ensure that semantic elements are used wherever possible, and only supplement with ARIA roles when a semantic element does not provide the required accessibility. Follow best practices to avoid redundant or incorrect ARIA usage.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Render All Components in Main Page for Structure Verification",
+            "description": "Import and render all updated components within the main page to verify the overall structure and ensure correct nesting and accessibility semantics.",
+            "dependencies": [
+              2
+            ],
+            "details": "Check that the page structure matches the intended layout, and use browser accessibility tools to confirm that semantic and ARIA roles are correctly interpreted by assistive technologies.",
+            "status": "done",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "title": "Populate Components with Verbatim Marketing Copy and Static Assets",
+        "description": "Fill each section/component with the exact copy provided in the PRD and use placeholder assets for images, videos, and icons.",
+        "details": "Copy-paste all headlines, sub-headlines, body text, and CTA labels as specified.\nUse placeholder images/videos (e.g., `/public/hero-placeholder.mp4`, `/public/logo-placeholder.svg`).\nIntegrate Lucide React icons as specified for each section.",
+        "testStrategy": "Visually inspect each section for correct copy and placeholder asset usage. Run automated snapshot tests for content integrity.",
+        "priority": "high",
+        "dependencies": [
+          18
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Insert Marketing Copy into Each Component",
+            "description": "Add relevant marketing copy to every component in the project, ensuring the text aligns with the intended messaging and branding guidelines.",
+            "dependencies": [],
+            "details": "Review each component and identify areas where marketing copy is needed. Write or insert the provided marketing text, ensuring clarity and consistency throughout the application.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Add Placeholder Images, Videos, and Icons",
+            "description": "Place appropriate placeholder images, videos, and generic icons in each component to visually represent the intended content layout.",
+            "dependencies": [
+              1
+            ],
+            "details": "For each component, select and insert placeholder assets (such as stock images, video thumbnails, and default icons) where visual content is required. Ensure assets are clearly marked as placeholders.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Integrate Lucide React Icons as Specified",
+            "description": "Replace generic or placeholder icons with Lucide React icons according to the project specifications, ensuring correct import and usage.",
+            "dependencies": [
+              2
+            ],
+            "details": "Identify all locations where Lucide React icons are required. Import the necessary icons from the 'lucide-react' package and integrate them into the components, customizing size and color as needed.",
+            "status": "done",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "title": "Implement Responsive Layouts and Grids for All Sections",
+        "description": "Ensure all sections use responsive layouts and grids, optimized for mobile-first experience and no horizontal scrolling.",
+        "details": "Use Tailwind CSS v4 grid and flex utilities to implement:\n- Hero: full-screen, responsive video background\n- CredibilityBar: horizontal logo bar, responsive row\n- ProblemSection: 4-column grid desktop, 2-column tablet, 1-column mobile\n- SolutionSection: central text block, 3-column grid for benefits\n- ProcessSection: horizontal steps desktop, vertical stack mobile\n- CaseStudiesSection: alternating two-column layout\n- TeamSection: 3-column grid for bios\n- FAQSection: centered single-column\n- FinalCTASection: 2-column desktop, stacked mobile\nTest with Chrome DevTools device emulation.",
+        "testStrategy": "Use browser device emulation and Percy visual regression to confirm layouts adapt correctly. Run Lighthouse mobile audits.",
+        "priority": "high",
+        "dependencies": [
+          19
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Implement Responsive Grid and Flex Layouts for Each Section",
+            "description": "Develop custom responsive layouts for every section using CSS Grid and Flexbox, ensuring fluidity and adaptability across screen sizes.",
+            "dependencies": [],
+            "details": "Use relative units (%, fr, em, rem) and media queries. Combine Grid for overall structure and Flexbox for internal alignment or navigation. Ensure layouts are mobile-first and optimize for both one- and two-dimensional arrangements.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Test Layouts on Desktop, Tablet, and Mobile",
+            "description": "Manually and programmatically test each section's layout on a range of device sizes to confirm responsiveness.",
+            "dependencies": [
+              1
+            ],
+            "details": "Resize browser windows and use device presets in browser dev tools to check layout behavior. Validate that all sections adapt as intended on common breakpoints (desktop, tablet, mobile).",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Ensure No Horizontal Scrolling Occurs",
+            "description": "Verify that no section causes unwanted horizontal scrolling at any viewport width.",
+            "dependencies": [
+              2
+            ],
+            "details": "Check for overflow issues by inspecting the body and main containers. Adjust CSS properties (e.g., overflow-x, max-width) as needed to prevent horizontal scrollbars.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 4,
+            "title": "Verify Layouts Using Device Emulation Tools",
+            "description": "Use device emulation features in browser developer tools to simulate a variety of real devices and confirm layout integrity.",
+            "dependencies": [
+              3
+            ],
+            "details": "Test on emulated devices (e.g., iPhone, iPad, Android phones/tablets) to catch device-specific issues not visible in standard resizing.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 5,
+            "title": "Run Visual Regression and Lighthouse Audits",
+            "description": "Perform automated visual regression testing and Lighthouse audits to ensure visual consistency and performance/accessibility compliance.",
+            "dependencies": [
+              4
+            ],
+            "details": "Use tools like Percy, Chromatic, or Storybook for visual regression. Run Lighthouse audits for performance, accessibility, and best practices, addressing any flagged issues.",
+            "status": "done",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "title": "Integrate shadcn/ui Components and Lucide Icons",
+        "description": "Replace placeholders with shadcn/ui components and Lucide React icons as specified for buttons, cards, avatars, accordions, and icons.",
+        "details": "Use `<Button size=\"lg\">`, `<Card>`, `<Avatar>`, `<Accordion type=\"single\" collapsible>` from shadcn/ui.\nIntegrate Lucide icons (e.g., Workflow, TrendingDown, Zap, ShieldCheck, etc.) in relevant sections.\nEnsure all interactive elements are keyboard accessible.",
+        "testStrategy": "Test all interactive components for correct rendering and keyboard navigation. Use Axe or Lighthouse for accessibility checks.",
+        "priority": "high",
+        "dependencies": [
+          20
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Replace Placeholders with shadcn/ui Components",
+            "description": "Identify all placeholder UI elements in the project and systematically replace them with appropriate shadcn/ui components, ensuring correct usage and integration.",
+            "dependencies": [],
+            "details": "Review the codebase for placeholder elements. For each, select the most suitable shadcn/ui component (e.g., Button, Input, Command) and implement it according to the documentation and project requirements.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Integrate Lucide Icons in Relevant Sections",
+            "description": "Incorporate Lucide icons into UI sections where icons are needed, following shadcn/ui's latest icon integration practices.",
+            "dependencies": [
+              1
+            ],
+            "details": "Identify UI areas that require icons. Use Lucide as the default icon set, leveraging shadcn/ui's built-in support. Ensure icons are semantically appropriate and visually consistent.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Ensure Keyboard Accessibility for Interactive Elements",
+            "description": "Audit all interactive UI components to guarantee full keyboard accessibility, making adjustments as needed to comply with accessibility standards.",
+            "dependencies": [
+              2
+            ],
+            "details": "Test all interactive elements (buttons, inputs, menus, etc.) for keyboard navigation and focus management. Update components or add ARIA attributes to resolve any accessibility gaps.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 4,
+            "title": "Run Accessibility Checks",
+            "description": "Perform automated and manual accessibility checks on the updated UI to verify compliance and address any remaining issues.",
+            "dependencies": [
+              3
+            ],
+            "details": "Use tools like axe, Lighthouse, or similar to run accessibility audits. Manually test for screen reader compatibility and keyboard navigation. Document and fix any issues found.",
+            "status": "done",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "title": "Implement Sticky Navigation Bar with Smooth Scrolling",
+        "description": "Develop a sticky header navigation bar that becomes opaque on scroll and enables smooth scrolling to page sections.",
+        "details": "Use Tailwind CSS for sticky positioning and opacity transitions.\nImplement smooth scrolling with `scrollIntoView` or Next.js anchor links.\nEnsure navigation is accessible via keyboard and screen readers.",
+        "testStrategy": "Test navigation bar for stickiness, opacity change, and smooth scrolling. Validate keyboard navigation and ARIA labeling.",
+        "priority": "medium",
+        "dependencies": [
+          21
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Building the Sticky Navigation Bar",
+            "description": "Create the HTML structure for the navigation bar and apply CSS to make it sticky at the top of the viewport using 'position: sticky' or JavaScript fallback if needed.",
+            "dependencies": [],
+            "details": "Define the navigation bar in HTML. Use CSS to set 'position: sticky; top: 0;' for modern browsers. Optionally, implement a JavaScript solution for broader compatibility or enhanced behavior.\n<info added on 2025-08-19T06:02:28.895Z>\n✅ COMPLETED: Building the Sticky Navigation Bar\n\nImplementation Details:\n- Updated Navigation component to use 'use client' directive for client-side functionality\n- Implemented sticky positioning with fixed top-0 positioning\n- Added scroll detection using useEffect and window.addEventListener('scroll')\n- Created dynamic opacity transitions based on scroll position (isScrolled state)\n- Navigation becomes more opaque (bg-background/95) when scrolled past 50px threshold\n- Added proper backdrop-blur effects for both scrolled and non-scrolled states\n- Included smooth transitions with duration-300 for all state changes\n\nTechnical Implementation:\n- Used React useState and useEffect hooks for scroll state management\n- Implemented proper cleanup with removeEventListener in useEffect return\n- Added conditional CSS classes based on isScrolled state\n- Maintained responsive design with proper container and padding\n</info added on 2025-08-19T06:02:28.895Z>",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Implementing Opacity Transitions on Scroll",
+            "description": "Add JavaScript and CSS to smoothly transition the navbar's opacity based on the user's scroll position.",
+            "dependencies": [
+              1
+            ],
+            "details": "Detect scroll events with JavaScript. Adjust the navbar's opacity using CSS transitions when the user scrolls past a certain threshold, creating a fade-in/fade-out effect.\n<info added on 2025-08-19T06:04:09.957Z>\n✅ COMPLETED: Implementing Opacity Transitions on Scroll\n\nImplementation Details:\n- Added scroll event listener using useEffect hook with proper cleanup\n- Implemented isScrolled state that triggers when scrollY > 50px\n- Created dynamic CSS classes based on scroll position:\n  - Non-scrolled: bg-background/80 backdrop-blur-sm border-b border-border/50\n  - Scrolled: bg-background/95 backdrop-blur-md border-b border-border shadow-sm\n- Added smooth transitions with duration-300 for all state changes\n- Opacity transitions work seamlessly with backdrop-blur effects\n- Navigation becomes more opaque and gains shadow when scrolled for better visibility\n\nTechnical Implementation:\n- Used window.addEventListener('scroll', handleScroll) for scroll detection\n- Proper cleanup with removeEventListener in useEffect return function\n- Conditional CSS classes applied via template literals\n- Smooth transition-all duration-300 applied to nav element\n</info added on 2025-08-19T06:04:09.957Z>",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Adding Smooth Scrolling to Sections",
+            "description": "Enable smooth scrolling behavior when navigation links are clicked, enhancing user experience.",
+            "dependencies": [
+              1
+            ],
+            "details": "Use CSS 'scroll-behavior: smooth;' for basic support. For broader compatibility or custom behavior, implement smooth scrolling with JavaScript event listeners on navigation links.\n<info added on 2025-08-19T06:04:29.119Z>\n✅ COMPLETED: Adding Smooth Scrolling to Sections\n\nImplementation Details:\n- Added scroll-behavior: smooth to html element in globals.css for native smooth scrolling\n- Implemented handleSmoothScroll function in Navigation component for enhanced control\n- Used scrollIntoView with behavior: \"smooth\" and block: \"start\" for precise positioning\n- Added section IDs to all relevant components:\n  - #how-it-works (ProcessSection)\n  - #solutions (SolutionSection) \n  - #why-us (CaseStudiesSection)\n  - #our-team (TeamSection)\n  - #contact (FinalCTASection)\n- Navigation links properly prevent default behavior and trigger smooth scrolling\n- Mobile menu closes automatically after navigation link is clicked\n- Logo click scrolls smoothly to top of page\n\nTechnical Implementation:\n- CSS: html { scroll-behavior: smooth; } for baseline support\n- JavaScript: targetElement.scrollIntoView({ behavior: \"smooth\", block: \"start\" })\n- Event handling: e.preventDefault() to override default anchor behavior\n- State management: setIsMobileMenuOpen(false) to close mobile menu on navigation\n</info added on 2025-08-19T06:04:29.119Z>",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 4,
+            "title": "Ensuring Accessibility and ARIA Labeling",
+            "description": "Review and update the navigation bar to meet accessibility standards, including proper ARIA roles and keyboard navigation support.",
+            "dependencies": [
+              1
+            ],
+            "details": "Add appropriate ARIA attributes (e.g., 'role=\"navigation\"', 'aria-label'). Ensure all links are keyboard accessible and provide sufficient color contrast. Test with screen readers.\n<info added on 2025-08-19T06:04:46.780Z>\n✅ COMPLETED: Ensuring Accessibility and ARIA Labeling\n\nImplementation Details:\n- Added proper role=\"navigation\" to nav element for semantic meaning\n- Implemented aria-label=\"Main navigation\" for screen reader context\n- Added aria-expanded attribute to mobile menu button that updates based on menu state\n- Included aria-controls=\"mobile-menu\" to associate button with menu content\n- Added descriptive aria-label attributes to all navigation links with section context\n- Implemented proper focus management with focus:outline-none focus:ring-2 focus:ring-primary\n- Added focus:ring-offset-2 for better focus visibility\n- Used semantic HTML elements (nav, button, a) for proper structure\n- Included sr-only text for screen readers when needed\n- Mobile menu button has proper aria-label that changes based on state (\"Open menu\" / \"Close menu\")\n\nAccessibility Features:\n- Keyboard navigation support with proper focus states\n- Screen reader friendly with descriptive labels\n- High contrast focus indicators using ring utilities\n- Semantic HTML structure for assistive technologies\n- Mobile menu properly associated with toggle button\n- All interactive elements are keyboard accessible\n\nTechnical Implementation:\n- ARIA attributes: role, aria-label, aria-expanded, aria-controls\n- Focus management: focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2\n- Semantic elements: nav, button, a tags used appropriately\n- Screen reader support: sr-only classes and descriptive labels\n</info added on 2025-08-19T06:04:46.780Z>",
+            "status": "done",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "title": "Optimize and Integrate Final Visual Assets (Video, GIFs, Logos, Headshots)",
+        "description": "Replace all placeholder assets with final, optimized hero video, case study GIFs, SVG logos, and professional headshots.",
+        "details": "Convert videos/GIFs to AVIF/WebP/MP4/WebM as appropriate.\nCompress assets using Squoosh or similar tools.\nUse Next.js `<Image>` for images and `<video>` for videos with lazy loading and static image fallback for mobile/prefers-reduced-motion.",
+        "testStrategy": "Run Lighthouse performance audits for LCP, FID, CLS. Check asset loading and fallbacks on slow connections and mobile devices.",
+        "priority": "medium",
+        "dependencies": [
+          21
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Optimize Videos and GIFs to Modern Formats",
+            "description": "Convert all video and GIF assets to modern, efficient formats such as WebP, AVIF, or MP4 to ensure optimal performance and compatibility across browsers.",
+            "dependencies": [],
+            "details": "Use tools and plugins to convert GIFs to WebP or AVIF, and videos to MP4 or WebM. Ensure that the converted files maintain acceptable visual quality while significantly reducing file size.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Compress and Prepare All Assets",
+            "description": "Apply compression techniques to all image, video, and animation assets to minimize file sizes without noticeable quality loss.",
+            "dependencies": [
+              1
+            ],
+            "details": "Utilize lossless and lossy compression tools for images and GIFs, reduce color depth, resize dimensions, and remove unnecessary frames or metadata. Prepare assets for integration by organizing them in the required directory structure.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Replace Placeholders with Final Assets",
+            "description": "Swap out all temporary or placeholder media in the project with the optimized, final versions of each asset.",
+            "dependencies": [
+              2
+            ],
+            "details": "Update code, templates, or content management systems to reference the new, optimized assets. Verify that all assets display correctly and that there are no broken links or missing files.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 4,
+            "title": "Implement Lazy Loading and Fallbacks",
+            "description": "Integrate lazy loading for all media assets and provide fallback formats to ensure compatibility and performance across different browsers and devices.",
+            "dependencies": [
+              3
+            ],
+            "details": "Use HTML loading attributes, JavaScript libraries, or frameworks to enable lazy loading. Add fallback sources for browsers that do not support modern formats, ensuring graceful degradation.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 5,
+            "title": "Run Performance Audits",
+            "description": "Conduct comprehensive performance audits to assess the impact of optimizations and ensure all assets load efficiently without degrading user experience.",
+            "dependencies": [
+              4
+            ],
+            "details": "Use tools like Lighthouse, WebPageTest, or browser dev tools to measure load times, asset sizes, and rendering performance. Identify and address any remaining bottlenecks or issues.",
+            "status": "done",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "title": "Develop Contact Form with React Hook Form and Zod Validation",
+        "description": "Build the final CTA contact form using shadcn/ui inputs, React Hook Form for state management, and Zod for schema validation.",
+        "details": "Implement form fields: Full Name, Company Name, Role/Title, Work Email, Challenge (textarea).\nUse Zod schema from PRD for validation.\nProvide real-time client-side validation and error messages.\nEnsure accessibility (labels, ARIA, keyboard navigation).",
+        "testStrategy": "Write unit tests for form validation logic. Manually test form for error handling and accessibility.",
+        "priority": "high",
+        "dependencies": [
+          21
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Build the Form UI with shadcn/ui",
+            "description": "Set up the form layout and input components using the shadcn/ui library, ensuring a visually consistent and modular design.",
+            "dependencies": [],
+            "details": "Install shadcn/ui, initialize the library in your project, and use its form-related components (e.g., Form, FormItem, FormLabel, FormControl, FormMessage) to construct the form structure.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Integrate React Hook Form for State Management",
+            "description": "Connect the form UI to React Hook Form to manage form state, handle input registration, and process submissions.",
+            "dependencies": [
+              1
+            ],
+            "details": "Set up useForm from React Hook Form, register form fields, and wire up the form's onSubmit handler to React Hook Form's handleSubmit.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Implement Zod Schema Validation",
+            "description": "Define a Zod schema for form validation and integrate it with React Hook Form to enforce type-safe validation rules.",
+            "dependencies": [
+              2
+            ],
+            "details": "Create a Zod schema describing the form's validation requirements, and use the zodResolver to connect Zod with React Hook Form.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 4,
+            "title": "Add Real-Time Validation and Error Messages",
+            "description": "Enable real-time validation feedback and display error messages for invalid fields using shadcn/ui components.",
+            "dependencies": [
+              3
+            ],
+            "details": "Configure React Hook Form to validate on change or blur, and use FormMessage or similar components to show contextual error messages as users interact with the form.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 5,
+            "title": "Ensure Accessibility and Write Unit Tests",
+            "description": "Verify that the form is accessible (ARIA attributes, keyboard navigation) and implement unit tests to cover validation and interaction logic.",
+            "dependencies": [
+              4
+            ],
+            "details": "Check for proper ARIA attributes, label associations, and keyboard support. Write unit tests for validation, error handling, and accessibility using a testing library such as React Testing Library.",
+            "status": "done",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "title": "Create /api/request-demo Endpoint with Server-side Zod Validation and Resend Integration",
+        "description": "Develop a Next.js API route to receive form submissions, validate with Zod, format HTML email, and send via Resend API.",
+        "details": "Create `/api/request-demo` POST endpoint.\nValidate payload with Zod schema server-side.\nFormat email using HTML templates.\nSend email using Resend API (latest version, with secure API key from Vercel env vars).\nReturn appropriate HTTP status codes.",
+        "testStrategy": "Write integration tests for API endpoint (valid/invalid payloads, email sending). Mock Resend API for test coverage.",
+        "priority": "high",
+        "dependencies": [
+          24
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Creating the API Route",
+            "description": "Set up the API endpoint using the framework's routing conventions, ensuring RESTful design and proper organization within the project structure.",
+            "dependencies": [],
+            "details": "Create the route file (e.g., route.ts) in the appropriate directory (such as app/api/ in Next.js) and define the endpoint path using plural nouns for resources. Ensure the route supports the necessary HTTP methods (GET, POST, etc.).\n<info added on 2025-08-19T06:08:05.436Z>\n✅ COMPLETED: Creating the API Route\n\nImplementation Details:\n- Created `/app/api/request-demo/route.ts` following Next.js 13+ App Router conventions\n- Implemented RESTful design with proper HTTP methods (POST for form submission, GET returns 405)\n- Used Next.js API route structure with named exports (POST, GET)\n- Organized within proper directory structure: app/api/request-demo/\n- Followed TypeScript best practices with proper type definitions\n- Implemented proper error handling and HTTP status codes\n\nTechnical Implementation:\n- File: `/app/api/request-demo/route.ts`\n- Framework: Next.js 15.4.7 App Router\n- HTTP Methods: POST (main functionality), GET (method not allowed)\n- Response format: JSON with consistent error/success structure\n- Route automatically available at `/api/request-demo` endpoint\n</info added on 2025-08-19T06:08:05.436Z>\n<info added on 2025-08-19T06:08:14.632Z>\nI notice that the user request appears to be identical to content that's already present in the current subtask details. Since the request doesn't contain any new information beyond what's already documented in the subtask, there is no new content to add.\n</info added on 2025-08-19T06:08:14.632Z>",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Implementing Server-side Zod Validation",
+            "description": "Integrate Zod schema validation to validate incoming request data on the server before processing.",
+            "dependencies": [
+              1
+            ],
+            "details": "Define Zod schemas for expected request payloads and use them to validate data within the API route handler. Handle validation errors by returning appropriate responses.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Formatting HTML Email Templates",
+            "description": "Design and implement HTML templates for emails to be sent via the API, ensuring proper formatting and compatibility.",
+            "dependencies": [
+              2
+            ],
+            "details": "Create reusable HTML templates, possibly using a templating engine or string literals. Ensure templates are responsive and render correctly across email clients.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 4,
+            "title": "Integrating Resend API with Secure Environment Variables",
+            "description": "Connect the API route to the Resend email service, securely managing API keys and configuration using environment variables.",
+            "dependencies": [
+              3
+            ],
+            "details": "Install and configure the Resend SDK or HTTP client. Store sensitive credentials in environment variables and access them securely in the codebase.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 5,
+            "title": "Handling HTTP Status Codes",
+            "description": "Implement robust handling of HTTP status codes for all API responses, reflecting success, validation errors, and integration failures.",
+            "dependencies": [
+              4
+            ],
+            "details": "Return appropriate status codes (e.g., 200, 400, 422, 500) based on the outcome of validation, email sending, and other operations. Ensure error messages are informative and consistent.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 6,
+            "title": "Writing Integration Tests and Mocking Resend",
+            "description": "Develop integration tests for the API route, including mocking the Resend service to simulate email sending and error scenarios.",
+            "dependencies": [
+              5
+            ],
+            "details": "Use a testing framework to write tests that cover valid and invalid requests, email formatting, and error handling. Mock the Resend API to avoid sending real emails during tests.",
+            "status": "done",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 26,
+        "title": "Implement SEO Metadata and Open Graph Tags Using Next.js Metadata API",
+        "description": "Add SEO metadata and Open Graph tags in `app/page.tsx` using Next.js Metadata API as specified in the PRD.",
+        "details": "Set page title, description, og:title, og:description, og:type, og:url, and og:image (`/public/og-image.png`).\nEnsure canonical URL and social sharing image are correct.",
+        "testStrategy": "Use browser dev tools and SEO audit tools to verify metadata and Open Graph tags. Share page on social platforms to confirm correct preview.",
+        "priority": "medium",
+        "dependencies": [
+          21
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Add SEO Metadata and Open Graph Tags in page.tsx",
+            "description": "Implement static or dynamic SEO metadata and Open Graph tags in the page.tsx file using Next.js Metadata API. Ensure inclusion of title, description, and Open Graph fields for optimal search engine and social media visibility.",
+            "dependencies": [],
+            "details": "Use either the static 'metadata' export or the 'generateMetadata' function in page.tsx. Include fields such as title, description, and openGraph (with title, description, images, and url).\n<info added on 2025-08-19T06:10:06.586Z>\nCOMPLETED: SEO metadata and Open Graph tags have been successfully implemented in app/page.tsx using Next.js Metadata API static export. All essential fields including title, description, keywords, authors, and comprehensive Open Graph properties (type, locale, url, siteName, title, description, images) are now configured. Twitter Card metadata, robots directives, and verification code placeholders have been added. The canonical URL is properly set via alternates.canonical, and Open Graph image is configured as /og-image.svg in 1200x630 SVG format. MetadataBase is configured for absolute URL resolution, format detection is disabled for email/phone/address, and category is set to \"technology\". A structured data component with JSON-LD schema for organization info has also been created.\n</info added on 2025-08-19T06:10:06.586Z>",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Ensure Canonical URL and Social Sharing Image",
+            "description": "Add a canonical URL and specify a social sharing image in the metadata to prevent duplicate content issues and improve social media previews.",
+            "dependencies": [
+              1
+            ],
+            "details": "Set the canonical URL using the 'canonical' field or a <link rel=\"canonical\"> tag. Define the Open Graph image (og:image) and URL (og:url) for accurate social sharing representation.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Verify Implementation with Browser Dev Tools and SEO Audit Tools",
+            "description": "Test and validate that all SEO metadata, canonical URL, and Open Graph tags are correctly rendered using browser developer tools and automated SEO audit tools.",
+            "dependencies": [
+              2
+            ],
+            "details": "Inspect the <head> section in browser dev tools to confirm correct tags. Use SEO audit tools (e.g., Lighthouse, Ahrefs, or Screaming Frog) to ensure metadata is recognized and there are no SEO errors.",
+            "status": "done",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 27,
+        "title": "Ensure WCAG 2.1 AA Accessibility Compliance",
+        "description": "Audit and enhance accessibility for all interactive elements, semantic HTML, ARIA attributes, color contrast, and alt text.",
+        "details": "Use semantic HTML5 tags for structure.\nAdd ARIA roles and attributes where needed.\nCheck color contrast ratios using Tailwind and Chrome Lighthouse.\nAdd descriptive alt text to all meaningful images; empty alt for decorative.\nTest keyboard navigation for all interactive elements.",
+        "testStrategy": "Run automated accessibility audits (Axe, Lighthouse). Manually test keyboard navigation and screen reader compatibility.",
+        "priority": "high",
+        "dependencies": [
+          21
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Audit Semantic HTML and ARIA Attributes",
+            "description": "Review all HTML markup to ensure semantic elements are used appropriately and ARIA attributes are correctly implemented only where necessary.",
+            "dependencies": [],
+            "details": "Check for proper use of elements like <nav>, <main>, <header>, <footer>, and ensure ARIA roles and properties are only used when native HTML cannot provide the required accessibility. Validate that ARIA attributes are only applied to allowed roles and elements.\n<info added on 2025-08-19T06:13:01.530Z>\n✅ COMPLETED: Audit Semantic HTML and ARIA Attributes\n\nImplementation Details:\n- Verified proper semantic HTML structure: html[lang=\"en\"], main, nav, section elements used correctly\n- Added appropriate ARIA labels to interactive elements (buttons with descriptive aria-label)\n- Implemented proper list semantics with role=\"list\" and role=\"listitem\" for company logos\n- Added aria-hidden=\"true\" to decorative background elements to hide from screen readers\n- Used role=\"img\" with descriptive aria-label for demo video placeholders\n- Navigation component already has proper ARIA attributes (role=\"navigation\", aria-label, aria-expanded, aria-controls)\n- All form elements use proper shadcn/ui components with built-in accessibility features\n- Structured data component provides additional semantic context via JSON-LD\n\nTechnical Implementation:\n- Semantic HTML5 elements: nav, main, section, h1-h6 hierarchy\n- ARIA roles: navigation, list, listitem, img\n- ARIA properties: aria-label, aria-hidden, aria-expanded, aria-controls\n- No unnecessary ARIA attributes - only used where native HTML cannot provide required accessibility\n- All interactive elements are properly labeled for screen readers\n</info added on 2025-08-19T06:13:01.530Z>",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Check Color Contrast and Alt Text",
+            "description": "Verify that all text and interactive elements meet minimum color contrast requirements and that all images have meaningful alt text.",
+            "dependencies": [
+              1
+            ],
+            "details": "Use color contrast analyzers to ensure compliance with WCAG guidelines. Review all images, icons, and graphical elements for descriptive alt attributes or appropriate ARIA labeling.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Test Keyboard Navigation",
+            "description": "Ensure that all interactive elements and navigation can be accessed and operated using only a keyboard.",
+            "dependencies": [
+              2
+            ],
+            "details": "Tab through the interface, checking focus order, visible focus indicators, and that all controls (buttons, links, forms, menus) are operable without a mouse. Confirm that ARIA roles and tabindex are used correctly for custom components.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 4,
+            "title": "Run Automated Accessibility Audits",
+            "description": "Use automated tools to scan the site for common accessibility issues.",
+            "dependencies": [
+              3
+            ],
+            "details": "Run tools such as axe, Lighthouse, or WAVE to identify issues related to ARIA, semantic HTML, color contrast, alt text, and keyboard accessibility. Document and prioritize findings for manual review.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 5,
+            "title": "Conduct Manual Screen Reader Testing",
+            "description": "Test the site with one or more screen readers to validate the user experience for visually impaired users.",
+            "dependencies": [
+              4
+            ],
+            "details": "Navigate the site using screen readers like NVDA, JAWS, or VoiceOver. Confirm that content is announced in a logical order, ARIA labels are read correctly, and all interactive elements are accessible.",
+            "status": "done",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 28,
+        "title": "Implement Performance Optimization: SSG/ISR, Asset Lazy Loading, and Budget Enforcement",
+        "description": "Optimize page for Core Web Vitals using Next.js SSG/ISR, lazy loading for below-the-fold assets, and image/video optimization.",
+        "details": "Configure Next.js for Static Site Generation (SSG) or Incremental Static Regeneration (ISR).\nLazy load images/videos below the fold.\nCompress assets and use modern formats (AVIF/WebP).\nMonitor LCP, FID, CLS using Lighthouse and Web Vitals.",
+        "testStrategy": "Run Lighthouse and Web Vitals audits. Confirm all metrics meet PRD thresholds (<2.5s LCP, <100ms FID, <0.1 CLS).",
+        "priority": "high",
+        "dependencies": [
+          23
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Configure SSG and ISR in Next.js",
+            "description": "Set up Static Site Generation (SSG) and Incremental Static Regeneration (ISR) for relevant pages in the Next.js application, specifying appropriate revalidation intervals and ensuring correct caching behavior.",
+            "dependencies": [],
+            "details": "Identify which pages should use SSG or ISR based on content update frequency and user needs. Implement ISR by adding the 'revalidate' property in getStaticProps, and verify correct cache and regeneration behavior in both development and production environments.\n<info added on 2025-08-19T06:25:08.793Z>\n✅ COMPLETED: Configure SSG and ISR in Next.js\n\nImplementation Details:\n- Configured Next.js for optimal static generation with next.config.js\n- Main landing page is automatically statically generated (marked with ○ in build output)\n- Added performance optimizations including:\n  - Image optimization with WebP/AVIF formats\n  - Package import optimization for lucide-react and @radix-ui/react-icons\n  - Compression enabled\n  - Proper caching headers for static assets (1 year cache for images)\n  - Bundle analyzer integration for performance monitoring\n- Added performance analysis scripts: npm run analyze and npm run build:analyze\n- Security headers configured (X-Content-Type-Options, X-Frame-Options, X-XSS-Protection)\n\nTechnical Implementation:\n- Static Site Generation: Landing page automatically generated as static content\n- Build output shows 41.3 kB page size with 141 kB First Load JS\n- All static assets cached for 1 year with immutable flag\n- Bundle analyzer available via ANALYZE=true environment variable\n- Next.js experimental optimizePackageImports reduces bundle size\n</info added on 2025-08-19T06:25:08.793Z>",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Implement Lazy Loading for Images and Videos",
+            "description": "Optimize media loading by enabling lazy loading for all images and videos to reduce initial page load time and improve perceived performance.",
+            "dependencies": [
+              1
+            ],
+            "details": "Use Next.js's built-in <Image> component for images with 'loading=\"lazy\"' and consider third-party libraries or native HTML attributes for videos. Audit all media usage to ensure lazy loading is consistently applied.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Compress and Convert Assets",
+            "description": "Reduce asset sizes by compressing images and videos and converting them to modern, efficient formats (e.g., WebP, AVIF for images; MP4, WebM for videos).",
+            "dependencies": [
+              2
+            ],
+            "details": "Integrate asset optimization tools into the build process. Ensure all static assets are compressed and converted before deployment, and update references in the codebase to use optimized versions.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 4,
+            "title": "Monitor Core Web Vitals",
+            "description": "Set up ongoing monitoring of Core Web Vitals metrics (LCP, FID, CLS) to track real-world performance and detect regressions.",
+            "dependencies": [
+              3
+            ],
+            "details": "Integrate analytics or monitoring tools (such as Google Analytics, Vercel Analytics, or custom scripts) to collect and report Core Web Vitals data from actual users. Establish alerting or reporting for significant metric changes.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 5,
+            "title": "Run and Analyze Lighthouse and Web Vitals Audits",
+            "description": "Perform automated audits using Lighthouse and Web Vitals tools to identify performance bottlenecks and actionable improvements.",
+            "dependencies": [
+              4
+            ],
+            "details": "Run Lighthouse audits on key pages in both development and production environments. Analyze the results, prioritize issues, and document recommendations for further optimization.",
+            "status": "done",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 29,
+        "title": "Deploy to Vercel and Configure Environment Variables",
+        "description": "Deploy the landing page to Vercel, set up environment variables for Resend API, and verify production build integrity.",
+        "details": "Push code to GitHub and connect to Vercel.\nSet environment variables for Resend API securely in Vercel dashboard.\nTest production deployment for asset loading, API functionality, and environment variable access.",
+        "testStrategy": "Verify deployment status, run end-to-end tests on production, and check error logs for API and asset issues.",
+        "priority": "high",
+        "dependencies": [
+          25,
+          28
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Push Code to GitHub and Connect Repository to Vercel",
+            "description": "Upload your project code to a new or existing GitHub repository and connect this repository to Vercel for automated deployments.",
+            "dependencies": [],
+            "details": "Create a GitHub repository and push your project code. In the Vercel dashboard, start a new project and import your GitHub repository. Authorize Vercel to access your GitHub account and select the repository to enable automatic deployments.\n<info added on 2025-08-19T08:07:14.195Z>\nRepository successfully connected to Vercel with comprehensive deployment preparation completed. All necessary configuration files have been created including DEPLOYMENT.md guide, .env.example template, and optimized vercel.json settings. Build verification shows successful compilation with main page at 41.3 kB static size and total First Load JS at 141 kB. Framework configured as Next.js with 10-second API route timeout, security headers, and CORS configuration. Sitemap API route added for SEO optimization. Ready to proceed with environment variable configuration in Vercel dashboard.\n</info added on 2025-08-19T08:07:14.195Z>",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Set Environment Variables Securely in Vercel",
+            "description": "Configure required environment variables for your project in Vercel, ensuring sensitive data is stored securely.",
+            "dependencies": [
+              1
+            ],
+            "details": "In the Vercel dashboard, navigate to your project settings and add environment variables under the 'Environment Variables' section. Use the appropriate scopes (development, preview, production) and avoid committing secrets to your codebase.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Test Production Deployment for Asset and API Integrity",
+            "description": "Verify that the production deployment serves all static assets correctly and that all API endpoints function as expected.",
+            "dependencies": [
+              2
+            ],
+            "details": "After deploying to production, access the live site and check that all images, scripts, and styles load without errors. Test API endpoints for correct responses and error handling. Use browser developer tools and network logs to confirm asset integrity.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 4,
+            "title": "Run End-to-End Tests and Check Deployment Logs",
+            "description": "Execute automated end-to-end tests against the production deployment and review deployment logs for errors or warnings.",
+            "dependencies": [
+              3
+            ],
+            "details": "Use a testing framework (e.g., Cypress, Playwright) to run end-to-end tests on the production URL. In Vercel, review the deployment logs for build or runtime errors and address any issues found.",
+            "status": "done",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "title": "Implement A/B Testing for Hero CTA Using Vercel Edge Config",
+        "description": "Set up A/B testing for the hero section CTA (Option A vs Option B) using Vercel Edge Config to determine highest-converting copy.",
+        "details": "Use Vercel Edge Config to serve different CTA variants to users.\nTrack conversion events and analyze results to select optimal CTA.",
+        "testStrategy": "Monitor conversion rates for each variant. Use analytics to validate statistical significance and correct variant serving.",
+        "priority": "medium",
+        "dependencies": [
+          29
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Set Up Vercel Edge Config for CTA Variants",
+            "description": "Create and configure a Vercel Edge Config instance to store CTA variant data for A/B testing.",
+            "dependencies": [],
+            "details": "Define the structure for storing CTA variants (e.g., JSON with variant keys and values). Populate Edge Config with initial variant data. Ensure access permissions and environment variables are set for secure reads at the edge.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Implement Logic to Serve CTA Variants",
+            "description": "Develop edge middleware or functions to dynamically serve CTA variants to users based on Edge Config data.",
+            "dependencies": [
+              1
+            ],
+            "details": "Write middleware (e.g., middleware.ts in Next.js) that reads from Edge Config and assigns users to variants, using cookies or other mechanisms to ensure consistent variant assignment per user session.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Track Conversion Events",
+            "description": "Integrate event tracking to capture user interactions and conversions for each CTA variant.",
+            "dependencies": [
+              2
+            ],
+            "details": "Implement client-side or server-side analytics to record which variant a user saw and whether they converted. Ensure events are tagged with variant identifiers for later analysis.",
+            "status": "done",
+            "testStrategy": ""
+          },
+          {
+            "id": 4,
+            "title": "Analyze Results for Statistical Significance",
+            "description": "Aggregate and analyze conversion data to determine if observed differences between CTA variants are statistically significant.",
+            "dependencies": [
+              3
+            ],
+            "details": "Export or query event data, calculate conversion rates per variant, and apply statistical tests (e.g., chi-squared or t-test) to assess significance. Document findings and recommend next steps based on results.",
+            "status": "done",
+            "testStrategy": ""
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "created": "2025-08-19T05:08:51.527Z",
+      "updated": "2025-08-19T09:07:41.862Z",
+      "description": "Tasks for master context"
+    }
+  }
+}

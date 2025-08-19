@@ -1,0 +1,517 @@
+Product Requirements Document: Bedrock Innovations Landing Page
+
+
+
+
+Document Version:
+
+1.4
+
+Status:
+
+Final
+
+Author:
+
+Gemini AI
+
+Date:
+
+August 19, 2025
+
+Last Updated:
+
+August 19, 2025
+
+1. Introduction & Strategic Goals
+1.1. Overview
+This document provides the comprehensive product and technical requirements for the public-facing landing page for Bedrock Innovations. This page will serve as the company's primary digital storefront and its most critical lead-generation asset. The project's scope is to design, develop, and deploy a single, persuasive, and highly polished web page that effectively communicates Bedrock's unique value proposition to its target market.
+
+A foundational principle of this project is the strict adherence to the provided marketing copy. All headlines, sub-headlines, body paragraphs, and calls-to-action specified within this document are final and must be implemented verbatim to maintain brand messaging integrity.
+
+1.2. Problem Statement
+Bedrock Innovations currently lacks a dedicated, high-quality online presence to attract and convert its ideal customers—leaders in service industries (landscaping, construction, field services) who are underserved by existing software solutions. Without a compelling landing page, the company cannot efficiently articulate its value, build credibility, or capture qualified leads, thereby hindering its growth potential. This project will solve that problem by creating a focused, narrative-driven experience that guides prospects from initial awareness to a formal sales inquiry.
+
+1.3. Target Audience
+The primary user persona for this landing page is:
+
+"David," The Owner/Decision-Maker:
+
+Role: Owner, CEO, or senior operations manager of a mid-to-large-sized service industry company (e.g., commercial landscaping, residential construction) with annual revenues between $10M and $50M.
+
+Technical Proficiency: Moderate. Comfortable using software but not a technical expert. Values simplicity and intuitive design.
+
+Pain Points: Deeply frustrated with high recurring costs for clunky, off-the-shelf software that only partially meets his business needs. He feels his company is being held back by operational inefficiencies, manual data entry, and a lack of innovation from his current software vendors. He is concerned about falling behind competitors who are leveraging modern AI and automation.
+
+Goals: Find a technology partner who understands his specific industry challenges. He wants to increase profitability, streamline complex workflows, and gain a competitive edge through a solution that provides a clear, measurable return on investment without causing significant disruption to his team's established processes.
+
+1.4. Business Objectives & Success Metrics
+The landing page will be considered successful if it achieves the following objectives:
+
+Objective
+
+Key Metric
+
+Success Target (First 3 Months)
+
+Generate Qualified Leads
+
+Number of valid form submissions
+
+> 30 submissions
+
+Achieve High Conversion Rate
+
+(Valid Submissions / Unique Visitors) * 100
+
+> 3%
+
+Establish Brand Credibility
+
+Time on Page / Scroll Depth
+
+Average time > 2 minutes / > 75% scroll depth
+
+Ensure High Performance
+
+Google Core Web Vitals (LCP, FID, CLS)
+
+All metrics in the "Good" threshold
+
+2. Functional Requirements & Verbatim Page Content
+This section details the 10 distinct modules of the landing page. All content is specified and must be implemented exactly as written.
+
+2.1. Section 1: Main Section: Immediate Impact & Value Proposition
+Objective: To capture the visitor's attention within the first 5 seconds, clearly state the problem and solution, and provide an immediate, compelling call-to-action.
+
+Verbatim Copy:
+
+Navigation Bar Links: How It Works | Solutions | Why Us | Our Team | Contact
+
+Main Headline: Stop Fighting Outdated Software. Start Building Your Future.
+
+Sub-headline: We build custom, end-to-end AI solutions for service industry leaders in landscaping, construction, and field services who are tired of clunky, overpriced systems that aren't innovating fast enough.
+
+Primary CTA Text: Request My Free Demo (Option A) OR Get My Free Custom Demo (Option B for A/B testing).
+
+Visual Elements & Components:
+
+Layout: Full-screen hero section.
+
+Background: A short, high-quality, looping background video depicting a modern AI interface transforming chaotic data into a clean, seamless workflow. A dark, semi-transparent overlay (e.g., bg-black/60) must be applied to ensure text contrast and readability.
+
+Components:
+
+Navigation: A sticky header that becomes opaque on scroll. Links should use smooth scrolling to navigate to the corresponding sections.
+
+shadcn/ui: <Button size="lg"> for the primary CTA.
+
+2.2. Section 2: Credibility Bar: Establishing Trust
+Objective: To rapidly build trust and authority by leveraging the brand equity of well-known, prestigious organizations.
+
+Verbatim Copy:
+
+Headline: Our team brings experience from world-class organizations.
+
+Logos: Bain & Company, Salesforce, Mars & Co., Wharton, Stanford, Porsche, and others.
+
+Visual Elements & Components:
+
+Layout: A clean, full-width horizontal bar with significant vertical padding.
+
+Styling: Use a muted background color (e.g., bg-muted) to subtly separate it from the sections above and below.
+
+Logos: Displayed in a single row. Logos must be high-resolution SVGs, rendered in grayscale for uniformity, with a full-color reveal on hover to add a touch of interactivity.
+
+2.3. Section 3: The Problem: Agitating the Pain Point
+Objective: To create a strong emotional connection with the target audience by demonstrating a deep understanding of their specific frustrations.
+
+Verbatim Copy:
+
+Section Headline: If your software feels like it was built 10 years ago—or isn't innovating fast enough—it probably was.
+
+Pain Points:
+
+Frustrating Workflows: Forcing your team to adapt to rigid, inefficient software?
+
+Sky-High Costs: Paying for features you don't need while prices climb?
+
+Stagnant Innovation: Waiting endlessly for updates that never come while competitors advance with AI?
+
+Wasted Time: Losing hours to manual data entry and repetitive tasks?
+
+Visual Elements & Components:
+
+Layout: A four-column grid on desktop, transitioning to a two-column grid on tablets and a single column on mobile.
+
+Components: Each grid item will be a distinct visual unit containing a large icon, the title, and the descriptive question.
+
+Lucide React Icons:
+
+Frustrating Workflows: Workflow
+
+Sky-High Costs: TrendingDown
+
+Stagnant Innovation: PackageX
+
+Wasted Time: Hourglass
+
+2.4. Section 4: The Solution: Introducing the Transformation
+Objective: To pivot from the user's pain to Bedrock's unique, compelling solution, highlighting the core benefits of a custom partnership model.
+
+Verbatim Copy:
+
+Section Headline: A Tool Built for You. And Only You.
+
+Core Message: Bedrock Innovations doesn't sell you a one-size-fits-all product. We become your dedicated development partner, building a lean, powerful AI system around your exact processes. The result? A tool so intuitive your team can use it on day one—with little to no learning curve. We deliver a measurable impact on your efficiency and your bottom line. Our commitment is backed by a simple guarantee: we will never keep or use your data.
+
+Key Benefits:
+
+Increase Efficiency: Automate tasks, streamline operations, and empower your team to focus on growth.
+
+Reduce Costs: Pay only for what you use. We back this with our guarantee—no hidden fees.
+
+A Partnership That Evolves With You: Our commitment doesn't end at launch. You'll receive continuous AI upgrades, expert consultations on the latest technologies, and our long-term commitment to your system's peak performance.
+
+Visual Elements & Components:
+
+Layout: A central, wide-measure text block for the core message, followed by a three-column grid for the key benefits.
+
+shadcn/ui: <Card> will be used for each of the three benefits. Each card will contain an icon, the benefit title, and the descriptive text.
+
+Lucide React Icons:
+
+Increase Efficiency: Zap
+
+Reduce Costs: ShieldCheck
+
+A Partnership That Evolves: GitMerge
+
+2.5. Section 5: How We Work: The Simple Path to Success
+Objective: To demystify the custom development process, reduce perceived risk, and build confidence by showcasing a simple, transparent, and rapid engagement model.
+
+Verbatim Copy:
+
+Section Headline: Our Simple, Transparent Process
+
+The Process:
+
+Step 1: Discover (Day 1): We schedule a call with a decision maker to listen carefully to your biggest challenges and needs. We sign an NDA.
+
+Step 2: Demonstrate (Day 5): Within 5 business days, we deliver a free, working custom demo to prove we understand and are serious—no strings attached.
+
+Step 3: Deliver (Within 3 Months): We scope out the technical details, build, and deliver your custom AI tool in under 3 months (with the exception of larger projects).
+
+Visual Elements & Components:
+
+Layout: A clean, 3-step infographic. On desktop, this will be a horizontal layout with connecting dashed lines or chevrons between each step to guide the user's eye. On mobile, it will stack vertically.
+
+Components: Each step will be a distinct visual block, possibly using a bordered <Card>, containing a large step number (e.g., "01"), an icon, the step title, and the description.
+
+Lucide React Icons:
+
+Step 1: Discover: ClipboardList
+
+Step 2: Demonstrate: Presentation
+
+Step 3: Deliver: PackageCheck
+
+2.6. Section 6: Solutions in Action: Concrete Proof (Mini Case Studies)
+Objective: To provide tangible, relatable proof of Bedrock's capabilities and the ROI of its solutions, transforming abstract promises into concrete success stories.
+
+Verbatim Copy:
+
+Section Headline: AI Tools We've Built for Companies Like Yours
+
+Case Studies (Full text for all four to be used verbatim):
+
+Case Study 1: Voice-to-Proposal: Client: A commercial landscaping company...
+
+Case Study 2: Automated Materials Tracking: Client: A residential construction firm...
+
+Case Study 3: AI Sales Development Rep: Client: A field services company...
+
+Case Study 4: Customized Client Discovery Tools: Client: A construction services provider...
+
+Visual Elements & Components:
+
+Layout: A repeating two-column layout for each case study, alternating sides (image left/text right, then text left/image right) to create visual rhythm down the page.
+
+Visuals: Each case study will feature a high-quality, auto-playing, looped animated GIF or a short (max 20-second) screen recording showcasing the tool in action.
+
+shadcn/ui: <Card> will contain the text content for each case study, clearly structured with labels like "Client," "Problem," "Solution," and "Result."
+
+2.7. Section 7: Who We Are: The Team Behind the Tech
+Objective: To humanize the brand, build deep personal trust, and showcase the world-class expertise and relentless work ethic of the founding team.
+
+Verbatim Copy:
+
+Section Headline: Strategic Insight Meets Relentless Execution
+
+Core Message: We're highly driven people who don't believe in work/life balance—we just want to deliver the best service and product. Our technical office in Seoul, South Korea, runs a tight, tireless team committed to bringing the latest AI from the lab to your business, working day and night to optimize your company.
+
+Team Bios (Full paragraphs for Chris Peeler, Paul Mewes, and KJ Yoo to be used verbatim):
+
+Visual Elements & Components:
+
+Layout: A central text block for the core message, followed by a three-column grid for the team bios.
+
+Components:
+
+shadcn/ui: <Card> for each team member. Each card will contain a professional headshot, the name, the experience/education summary, and the full bio paragraph.
+
+shadcn/ui: <Avatar> for the headshots.
+
+2.8. Section 8: Real Results: What Our Clients Say
+Objective: To deliver powerful, unbiased social proof from a satisfied client, which is often more persuasive than the company's own claims.
+
+Verbatim Copy:
+
+Section Headline: Don't just take our word for it.
+
+Quote: "Bedrock cut our proposal generation time by 90% and saved us over $20,000 in the first year alone. It's a complete game-changer."
+
+Attribution: Jane Doe, CEO, GreenScape Landscaping
+
+Visual Elements & Components:
+
+Layout: A visually distinct, full-width section with a prominent background color or image.
+
+Components: A large, stylized quotation mark icon (using a Lucide icon or custom SVG) will anchor the section. The layout will feature the client's professional photo, the large-font quote, and the attribution.
+
+2.9. Section 9: Frequently Asked Questions (FAQ): Overcoming Objections
+Objective: To proactively address and neutralize common customer questions and objections, removing the final barriers to conversion.
+
+Verbatim Copy:
+
+Section Headline: Answering Your Questions
+
+Questions & Answers (All three Q&As to be used verbatim):
+
+Visual Elements & Components:
+
+Layout: A centered, single-column layout with a constrained max-width for readability.
+
+shadcn/ui: <Accordion type="single" collapsible> will be used to create a clean, interactive list where users can click each question to reveal its answer.
+
+2.10. Section 10: Final Call-to-Action: The Final Push
+Objective: To provide a clear, compelling, and frictionless final opportunity for the user to convert into a qualified lead.
+
+Verbatim Copy:
+
+Section Headline: Your Transformation Starts Here. See What a Custom AI Could Do For You.
+
+Sub-headline: Tell us about your biggest operational headache. We'll show you how to solve it with a free, no-obligation custom demo.
+
+Form Field Labels: Full Name*, Company Name*, Your Role/Title*, Work Email*, What's the main operational challenge you want to solve?*
+
+Submit Button Text: Get My Free Demo
+
+Reassurance Text: We'll get back to you within one business day to schedule a brief, no-pressure discovery call. We will never share your information or send you spam.
+
+Legal Text: Terms and service and privacy policy. We reassure whatever they share we wont share with other competitors (This must be implemented as linked text).
+
+Visual Elements & Components:
+
+Layout: A two-column layout on desktop, with the headlines and sub-headline on the left and the contact form on the right. This will stack into a single column on mobile.
+
+shadcn/ui: <Input>, <Textarea>, <Label>, and <Button size="lg" className="w-full">.
+
+Form Validation: Real-time, client-side validation will provide instant feedback on errors (e.g., "A valid work email is required.").
+
+3. User Experience (UX) & Design
+3.1. User Flow
+The primary user flow is linear. The user lands on the hero section, is intrigued, and scrolls down. Each section builds upon the last, taking them on a journey from understanding their problem to believing in Bedrock's solution and, finally, to converting. A secondary flow allows users to use the sticky navigation to jump to sections of interest.
+
+3.2. Design Principles
+Professional & Trustworthy: The design must be clean, modern, and uncluttered, using ample white space. The aesthetic should communicate competence and high value.
+
+Clarity Above All: Typography must be crisp and legible. The visual hierarchy should be unambiguous, guiding the user's eye naturally down the page.
+
+Mobile-First: The experience on mobile devices is paramount. The design must be fully responsive, ensuring no horizontal scrolling and that all interactive elements are easily tappable.
+
+3.3. Accessibility (A11y)
+The site must be compliant with WCAG 2.1 AA standards. This includes:
+
+Keyboard Navigation: All interactive elements (links, buttons, form fields, accordion) must be fully navigable and operable using only a keyboard.
+
+Semantic HTML: Use proper HTML5 tags (<nav>, <main>, <section>, <header>, <footer>) to define the page structure.
+
+ARIA Attributes: Use appropriate ARIA roles where necessary.
+
+Color Contrast: All text must meet the minimum contrast ratios against its background.
+
+Alt Text: All meaningful images must have descriptive alt text. Decorative images should have empty alt="" attributes.
+
+4. Technical Specifications
+4.1. Technology Stack
+Framework: Next.js 14+ (App Router)
+
+Language: TypeScript
+
+Styling: Tailwind CSS v4
+
+UI Components: shadcn/ui
+
+Icons: Lucide React (lucide-react)
+
+Form Management: React Hook Form (for performance) & Zod (for schema validation)
+
+Email API: Resend
+
+Deployment & Hosting: Vercel
+
+4.2. CSS Theme Implementation
+The provided oklch CSS variable theme is mandatory and must be implemented in app/globals.css. This is the foundational color and style palette for the entire application and will be inherited by all shadcn/ui components.
+
+4.3. Data Model & Validation (Zod Schema)
+import { z } from 'zod';
+
+const demoRequestSchema = z.object({
+  fullName: z.string().min(2, { message: "Full name is required." }),
+  companyName: z.string().min(2, { message: "Company name is required." }),
+  role: z.string().min(2, { message: "Your role/title is required." }),
+  workEmail: z.string().email({ message: "A valid work email is required." }),
+  challenge: z.string().min(20, { message: "Please describe your challenge in at least 20 characters." }),
+});
+
+4.4. API Endpoint: /api/request-demo
+Method: POST
+
+Functionality:
+
+Receives the form data payload.
+
+Validates the payload against the demoRequestSchema on the server-side as a security measure.
+
+On successful validation, it formats the data into a professional HTML email.
+
+Uses the Resend API to send the email to a designated Bedrock Innovations inbox.
+
+Returns a 200 OK success response or an appropriate error code.
+
+4.5. SEO & Metadata
+The following metadata must be implemented in app/page.tsx using the Next.js Metadata API.
+
+Title: Custom AI Solutions for Service Industries | Bedrock Innovations
+
+Description: Stop fighting outdated software. Bedrock Innovations builds custom AI tools for landscaping, construction, and field services to boost efficiency and cut costs. Request your free demo.
+
+Open Graph (for social sharing):
+
+og:title: Same as the main title.
+
+og:description: Same as the main description.
+
+og:type: website
+
+og:url: The canonical production URL.
+
+og:image: A dedicated 1200x630px image (/public/og-image.png) that visually represents the brand.
+
+4.6. Performance Budget
+Largest Contentful Paint (LCP): < 2.5 seconds.
+
+First Input Delay (FID): < 100 milliseconds.
+
+Cumulative Layout Shift (CLS): < 0.1.
+
+Optimization Strategy: Leverage Next.js SSG/ISR. Optimize all images (AVIF/WebP), GIFs, and videos. Lazy load below-the-fold assets.
+
+5. Development & Deployment Plan
+5.1. Phased Roadmap
+Phase 1: MVP (Minimum Viable Page)
+
+Setup: Initialize Next.js project, install all dependencies, and configure the mandatory CSS theme.
+
+Component Scaffolding: Create placeholder components for all 10 sections.
+
+Static Content Implementation: Populate all components with the verbatim copy and static assets (using placeholders for video/GIFs).
+
+Form Development: Build the contact form with client-side validation using React Hook Form and Zod.
+
+API Development: Create and test the /api/request-demo endpoint with the Resend integration.
+
+Responsiveness & Polish: Ensure the entire page is pixel-perfect and fully responsive across all target devices.
+
+Deployment: Deploy to Vercel, configure environment variables, and conduct end-to-end testing.
+
+Phase 2: Enhancements (Post-Launch)
+
+Dynamic Asset Integration: Replace all placeholder assets with the final, optimized hero video and case study GIFs.
+
+Micro-interactions & Animations: Integrate a library like Framer Motion to add subtle, professional animations (e.g., fade-in on scroll) to enhance the user experience.
+
+A/B Testing: Implement A/B testing on the hero section CTA using Vercel Edge Config to determine the highest-converting copy.
+
+CRM Integration: Upgrade the form submission API to pipe lead data directly into a CRM (e.g., Salesforce, HubSpot).
+
+6. Risks & Mitigation
+Risk
+
+Likelihood
+
+Impact
+
+Mitigation Strategy
+
+Performance Bottleneck
+
+Medium
+
+High
+
+The hero background video will be heavily optimized and lazy-loaded. A static image fallback will be implemented for mobile devices or users with prefers-reduced-motion enabled.
+
+Asset Sourcing Delays
+
+Medium
+
+Medium
+
+The MVP will launch with high-quality, professionally sourced placeholders. Asset creation (video/GIF production) will be a parallel workstream that does not block the initial launch.
+
+Scope Creep
+
+Low
+
+High
+
+This PRD will be strictly adhered to. All feature requests outside of the defined scope (e.g., adding a blog, new pages) will be deferred to a future project.
+
+7. Out of Scope
+The following items are explicitly out of scope for this project:
+
+Any pages beyond the single landing page (e.g., no /about, /contact, or blog pages).
+
+User authentication or client portals.
+
+A Content Management System (CMS) for editing page content.
+
+Multi-language support.
+
+8. Appendix
+8.1. Asset Checklist
+[ ] Hero background video (MP4, WebM formats)
+
+[ ] Static hero background image (for fallback)
+
+[ ] Company logos in SVG format (Bain, Salesforce, etc.)
+
+[ ] Case Study 1 GIF/video
+
+[ ] Case Study 2 GIF/video
+
+[ ] Case Study 3 GIF/video
+
+[ ] Case Study 4 GIF/video
+
+[ ] Chris Peeler professional headshot
+
+[ ] Paul Mewes professional headshot
+
+[ ] KJ Yoo professional headshot
+
+[ ] Jane Doe (testimonial) professional photo
+
+[ ] Open Graph social sharing image (1200x630px)

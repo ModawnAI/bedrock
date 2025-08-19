@@ -1,0 +1,49 @@
+---
+description: Never build without user permission - always use npm run dev after changes
+globs: **/*
+alwaysApply: true
+---
+
+# Build Policy - MANDATORY RULE
+
+## **CRITICAL: Never Build Without Permission**
+
+- **NEVER run `npm run build`** without explicit user permission
+- **NEVER run build commands** (`build`, `build:analyze`, etc.) automatically
+- **ALWAYS ask for permission** before running any build command
+
+## **Required Development Workflow**
+
+- **ALWAYS run `npm run dev`** after making code changes
+- **Use development server** to test changes in real-time
+- **Only build when user explicitly requests it**
+
+## **Approved Commands After Changes**
+
+✅ **DO:**
+```bash
+npm run dev
+```
+
+❌ **DON'T:**
+```bash
+npm run build
+npm run build:analyze
+rm -rf .next && npm run build
+```
+
+## **Exception Handling**
+
+- If user says "build" or "test build" → Ask for confirmation
+- If user says "deploy" → Ask for confirmation before building
+- If user says "check if it works" → Use `npm run dev`, not build
+
+## **Enforcement**
+
+This rule applies to:
+- All file changes and updates
+- All component modifications
+- All configuration changes
+- All dependency installations
+
+**Remember: Development server (`npm run dev`) shows changes instantly without the overhead of full builds.**
