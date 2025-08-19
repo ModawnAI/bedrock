@@ -18,15 +18,34 @@ export default function Navigation() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+  const handleNavigation = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
     e.preventDefault();
-    const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      targetElement.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-      setIsMobileMenuOpen(false);
+    setIsMobileMenuOpen(false);
+    
+    // Check if we're on the main page
+    if (window.location.pathname === '/') {
+      // We're on the main page, just scroll to the section
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    } else {
+      // We're on a different page, navigate to main page with hash
+      window.location.href = `/#${targetId}`;
+    }
+  };
+
+  const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    if (window.location.pathname === '/') {
+      // We're on the main page, scroll to top
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      // We're on a different page, navigate to main page
+      window.location.href = '/';
     }
   };
 
@@ -53,13 +72,10 @@ export default function Navigation() {
           {/* Logo */}
           <div className="flex items-center">
             <a 
-              href="#" 
-              onClick={(e) => {
-                e.preventDefault();
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }}
+              href="/" 
+              onClick={handleLogoClick}
               className="flex items-center hover:opacity-80 transition-opacity"
-              aria-label="Bedrock Innovations - Go to top"
+              aria-label="Bedrock Innovations - Go to homepage"
             >
               <Image
                 src="/logo.svg"
@@ -78,7 +94,7 @@ export default function Navigation() {
               <a
                 key={link.href}
                 href={link.href}
-                onClick={(e) => handleSmoothScroll(e, link.href.substring(1))}
+                onClick={(e) => handleNavigation(e, link.href.substring(1))}
                 className="text-muted-foreground hover:text-foreground transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-sm px-2 py-1 font-semibold"
                 aria-label={`Navigate to ${link.label} section`}
               >
@@ -114,7 +130,7 @@ export default function Navigation() {
                 <a
                   key={link.href}
                   href={link.href}
-                  onClick={(e) => handleSmoothScroll(e, link.href.substring(1))}
+                  onClick={(e) => handleNavigation(e, link.href.substring(1))}
                   className="text-muted-foreground hover:text-foreground transition-colors duration-200 px-4 py-2 rounded-md hover:bg-muted focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 font-semibold"
                   aria-label={`Navigate to ${link.label} section`}
                 >
