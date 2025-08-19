@@ -35,14 +35,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://bedrockinnov.com"),
+  metadataBase: new URL("https://bedrocklanding.vercel.app"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://bedrockinnov.com",
+    url: "https://bedrocklanding.vercel.app",
     siteName: "Bedrock Innovations",
     title: "Bedrock Innovations - Custom AI Solutions for Service Industries",
     description: "We build custom, end-to-end AI solutions for service industry leaders in landscaping, construction, and field services who are tired of clunky, overpriced systems that aren't innovating fast enough.",

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Terms of Service | Bedrock Innovations",
     description: "Terms of Service for Bedrock Innovations LLC - Custom AI Solutions for Service Industries. Review our terms and conditions for using our AI development services.",
-    url: "https://bedrockinnov.com/terms",
+    url: "https://bedrocklanding.vercel.app/terms",
     images: ["/og-image.png"],
   },
   robots: {
