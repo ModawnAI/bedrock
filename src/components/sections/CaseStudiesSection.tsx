@@ -1,7 +1,12 @@
+"use client"
+
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Mic, Package, Users, Search, Zap, TrendingUp, AlertTriangle, Lightbulb, Target } from "lucide-react";
+import { useLanguage } from "@/lib/i18n";
 
 export default function CaseStudiesSection() {
+  const { t } = useLanguage();
+  
   return (
     <section id="why-us" className="py-16 sm:py-20 lg:py-24 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -15,7 +20,7 @@ export default function CaseStudiesSection() {
             </div>
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-            Real AI Solutions That Transformed Real Businesses
+            {t("caseStudies.title")}
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             See how we&apos;ve helped service industry leaders eliminate operational headaches and unlock measurable growth with custom AI tools built specifically for their unique challenges.

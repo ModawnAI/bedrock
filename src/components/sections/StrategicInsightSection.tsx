@@ -31,22 +31,22 @@ export default function StrategicInsightSection() {
             <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto md:mx-0 mb-6">
               <Brain className="text-primary w-8 h-8" />
             </div>
-            <h3 className="text-xl sm:text-2xl font-bold mb-4">Strategic Insight</h3>
+            <h3 className="text-xl sm:text-2xl font-bold mb-4">{t("strategicInsight.insight.title")}</h3>
             <p className="text-muted-foreground text-sm sm:text-base leading-relaxed mb-6">
-              We start by understanding your business at a fundamental level. Our team analyzes your workflows, identifies inefficiencies, and designs AI solutions that align with your long-term growth objectives—not just your immediate pain points.
+              {t("strategicInsight.insight.description")}
             </p>
             <ul className="text-muted-foreground text-sm sm:text-base space-y-2 text-left">
               <li className="flex items-start">
                 <span className="text-primary mr-2 mt-1">•</span>
-                <span>Deep-dive business process analysis</span>
+                <span>{t("strategicInsight.insight.points.0")}</span>
               </li>
               <li className="flex items-start">
                 <span className="text-primary mr-2 mt-1">•</span>
-                <span>ROI-focused solution architecture</span>
+                <span>{t("strategicInsight.insight.points.1")}</span>
               </li>
               <li className="flex items-start">
                 <span className="text-primary mr-2 mt-1">•</span>
-                <span>Scalable system design for future growth</span>
+                <span>{t("strategicInsight.insight.points.2")}</span>
               </li>
             </ul>
           </div>
@@ -56,22 +56,22 @@ export default function StrategicInsightSection() {
             <div className="w-16 h-16 bg-secondary/10 rounded-lg flex items-center justify-center mx-auto md:mx-0 mb-6">
               <Zap className="text-secondary w-8 h-8" />
             </div>
-            <h3 className="text-xl sm:text-2xl font-bold mb-4">Relentless Execution</h3>
+            <h3 className="text-xl sm:text-2xl font-bold mb-4">{t("strategicInsight.execution.title")}</h3>
             <p className="text-muted-foreground text-sm sm:text-base leading-relaxed mb-6">
-              Strategy without execution is just planning. We deliver working solutions rapidly, iterate based on real-world feedback, and continuously optimize performance until you achieve the results you need.
+              {t("strategicInsight.execution.description")}
             </p>
             <ul className="text-muted-foreground text-sm sm:text-base space-y-2 text-left">
               <li className="flex items-start">
                 <span className="text-secondary mr-2 mt-1">•</span>
-                <span>Rapid prototyping and deployment</span>
+                <span>{t("strategicInsight.execution.points.0")}</span>
               </li>
               <li className="flex items-start">
                 <span className="text-secondary mr-2 mt-1">•</span>
-                <span>Continuous performance monitoring</span>
+                <span>{t("strategicInsight.execution.points.1")}</span>
               </li>
               <li className="flex items-start">
                 <span className="text-secondary mr-2 mt-1">•</span>
-                <span>Iterative improvement based on real data</span>
+                <span>{t("strategicInsight.execution.points.2")}</span>
               </li>
             </ul>
           </div>
@@ -81,10 +81,10 @@ export default function StrategicInsightSection() {
         <div className="text-center mt-12 sm:mt-16">
           <div className="flex items-center justify-center mb-4">
             <TrendingUp className="text-primary w-6 h-6 mr-2" />
-            <span className="text-sm sm:text-base font-semibold text-primary">The Result</span>
+            <span className="text-sm sm:text-base font-semibold text-primary">{t("strategicInsight.result.label")}</span>
           </div>
           <p className="text-lg sm:text-xl font-medium text-foreground max-w-3xl mx-auto">
-            AI solutions that don&apos;t just work—they transform your business operations and deliver measurable ROI within months, not years.
+            {t("strategicInsight.result.description")}
           </p>
         </div>
       </div>

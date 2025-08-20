@@ -1,12 +1,17 @@
+"use client"
+
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { useLanguage } from "@/lib/i18n";
 
 export default function FAQSection() {
+  const { t } = useLanguage();
+  
   return (
     <section className="py-16 sm:py-20 lg:py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-            Answering Your Questions
+            {t("faq.title")}
           </h2>
         </div>
         
@@ -14,10 +19,10 @@ export default function FAQSection() {
           <Accordion type="single" collapsible className="space-y-4 sm:space-y-6">
             <AccordionItem value="implementation-time" className="bg-card border rounded-lg hover:shadow-md transition-shadow px-4 sm:px-6">
               <AccordionTrigger className="text-sm sm:text-base font-semibold">
-                How long does implementation typically take?
+                {t("faq.items.implementation.question")}
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                Most projects are completed within 3 months. We start with a working demo in 5 business days, then move to full implementation. Larger, more complex systems may take longer, but we&apos;ll give you a clear timeline upfront.
+                {t("faq.items.implementation.answer")}
               </AccordionContent>
             </AccordionItem>
             

@@ -1,18 +1,23 @@
+"use client"
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Image from "next/image";
+import { useLanguage } from "@/lib/i18n";
 
 export default function TeamSection() {
+  const { t } = useLanguage();
+  
   return (
     <section id="our-team" className="py-16 sm:py-20 lg:py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 leading-tight">
-            Strategic Insight Meets Relentless Execution
+            {t("team.title")}
           </h2>
           
           <p className="text-base sm:text-lg text-center text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            We&apos;re highly driven people who don&apos;t believe in work/life balance—we just want to deliver the best service and product. Our technical office in Seoul, South Korea, runs a tight, tireless team committed to bringing the latest AI from the lab to your business, working day and night to optimize your company.
+            {t("team.subtitle")}
           </p>
         </div>
         
@@ -33,12 +38,12 @@ export default function TeamSection() {
                   </div>
                 </div>
                 <div className="flex-1 text-center lg:text-left">
-                  <h3 className="text-2xl lg:text-3xl font-semibold mb-3">Chris Peeler</h3>
+                  <h3 className="text-2xl lg:text-3xl font-semibold mb-3">{t("team.members.chris.name")}</h3>
                   <p className="text-base lg:text-lg text-muted-foreground mb-6 font-medium">
-                    Experience: Bain & Company | Education: Wharton MBA, Princeton University
+                    {t("team.members.chris.experience")}
                   </p>
                   <p className="text-muted-foreground text-base lg:text-lg leading-relaxed">
-                    Chris dismantles complex operational challenges and designs the blueprints for powerful, effective solutions. At Bain & Company, he advised industry-leading companies on their most critical business problems. But his strategic insight is grounded in hands-on reality; with direct experience in the landscaping industry, he understands the on-the-ground frustrations that outdated software creates for service businesses. This unique blend of boardroom strategy and job-site pragmatism ensures that every solution we build is not just technologically advanced, but perfectly tailored to drive bottom-line results for our clients.
+                    {t("team.members.chris.description")}
                   </p>
                 </div>
               </div>
@@ -61,12 +66,12 @@ export default function TeamSection() {
                   </div>
                 </div>
                 <div className="flex-1 text-center lg:text-left">
-                  <h3 className="text-2xl lg:text-3xl font-semibold mb-3">Paul Mewes</h3>
+                  <h3 className="text-2xl lg:text-3xl font-semibold mb-3">{t("team.members.paul.name")}</h3>
                   <p className="text-base lg:text-lg text-muted-foreground mb-6 font-medium">
-                    Experience: Salesforce | Education: Wharton MBA, Stanford University
+                    {t("team.members.paul.experience")}
                   </p>
                   <p className="text-muted-foreground text-base lg:text-lg leading-relaxed">
-                  Paul is obsessed with building technology people actually want to use. With a background in Product Design from Stanford University and go-to-market strategy experience at Salesforce and Mars & Co., he specializes in translating complex AI capabilities into clear, intuitive user experiences and compelling commercial strategies. Paul has led the launch and scaling of cutting-edge software solutions across industries, ensuring products not only meet real user needs but also deliver immediate business value. He knows what it takes to bring a product to market that resonates, sells, and becomes an indispensable tool for modern teams.
+                    {t("team.members.paul.description")}
                   </p>
                 </div>
               </div>
@@ -89,12 +94,12 @@ export default function TeamSection() {
                   </div>
                 </div>
                 <div className="flex-1 text-center lg:text-left">
-                  <h3 className="text-2xl lg:text-3xl font-semibold mb-3">KJ Yoo</h3>
+                  <h3 className="text-2xl lg:text-3xl font-semibold mb-3">{t("team.members.kj.name")}</h3>
                   <p className="text-base lg:text-lg text-muted-foreground mb-6 font-medium">
-                    Experience: Porsche Engineering, AI Application Developer
+                    {t("team.members.kj.experience")}
                   </p>
                   <p className="text-muted-foreground text-base lg:text-lg leading-relaxed">
-                    From our technical hub in Seoul, KJ leads the relentless engineering team that brings our clients' AI solutions to life. In Korea, he perfected a model for servicing businesses by integrating the world's most advanced AI for immediate, practical results. KJ's philosophy is centered on strategic application, not abstract research—he focuses on leveraging powerful, proven AI tools to deliver rapid ROI and significant operational efficiencies. Now, he brings this battle-tested playbook exclusively to the U.S. market through Bedrock. This approach, built on a foundation of world-class precision from his time as an engineer at Porsche, ensures our clients receive solutions that are reliable, effective, and ready to perform from day one.
+                    {t("team.members.kj.description")}
                   </p>
                 </div>
               </div>

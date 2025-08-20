@@ -16,9 +16,11 @@ import {
 } from "@/components/ui/form";
 import { contactFormSchema, type ContactFormData } from "@/lib/schemas";
 import { useABTestVariant, trackConversion } from "@/lib/ab-testing";
+import { useLanguage } from "@/lib/i18n";
 
 export default function FinalCTASection() {
   const { variant } = useABTestVariant();
+  const { t } = useLanguage();
   
   const form = useForm<ContactFormData>({
     resolver: zodResolver(contactFormSchema),
