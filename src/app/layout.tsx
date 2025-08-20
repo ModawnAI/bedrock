@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
+import { LanguageProvider } from "@/lib/i18n";
 
 const inter = Inter({ 
   subsets: ["latin"],
   variable: "--font-sans",
+});
+
+const notoSansKR = Noto_Sans_KR({
+  subsets: ["latin"],
+  variable: "--font-korean",
+  weight: ["300", "400", "500", "700"],
 });
 
 export const viewport = {
@@ -89,8 +96,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="light">
-      <body className={`${inter.variable} antialiased light`}>
-        {children}
+      <body className={`${inter.variable} ${notoSansKR.variable} antialiased light`}>
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );

@@ -4,9 +4,11 @@ import { Button } from "@/components/ui/button";
 import { useABTestVariant, AB_TEST_CONFIG, trackCTAView, trackCTAClick } from "@/lib/ab-testing";
 import { useEffect } from "react";
 import { Trees, HardHat, Wrench } from "lucide-react";
+import { useLanguage } from "@/lib/i18n";
 
 export default function HeroSection() {
   const { variant, isLoading } = useABTestVariant();
+  const { t } = useLanguage();
 
   useEffect(() => {
     if (!isLoading) {
@@ -28,23 +30,23 @@ export default function HeroSection() {
           <div className="flex justify-center items-center gap-8 mb-8" aria-label="Service industries we serve">
             <div className="flex flex-col items-center gap-2">
               <Trees className="w-12 h-12 text-primary" aria-hidden="true" />
-              <span className="text-sm text-muted-foreground font-medium">Landscaping</span>
+              <span className="text-sm text-muted-foreground font-medium">{t("hero.industries.landscaping")}</span>
             </div>
             <div className="flex flex-col items-center gap-2">
               <HardHat className="w-12 h-12 text-primary" aria-hidden="true" />
-              <span className="text-sm text-muted-foreground font-medium">Construction</span>
+              <span className="text-sm text-muted-foreground font-medium">{t("hero.industries.construction")}</span>
             </div>
             <div className="flex flex-col items-center gap-2">
               <Wrench className="w-12 h-12 text-primary" aria-hidden="true" />
-              <span className="text-sm text-muted-foreground font-medium">Field Services</span>
+              <span className="text-sm text-muted-foreground font-medium">{t("hero.industries.fieldServices")}</span>
             </div>
           </div>
           
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight">
-            Stop Fighting Outdated Software. Start Building Your Future.
+            {t("hero.title")}
           </h1>
                             <p className="text-lg sm:text-xl md:text-2xl mb-8 max-w-4xl mx-auto text-muted-foreground leading-relaxed">
-                    If your software feels like it was built 10 years ago -- or isn&apos;t innovating fast enough -- <em>then it&apos;s time to upgrade</em>.
+                    {t("hero.subtitle")}
                   </p>
           <div className="flex justify-center items-center">
             <Button 
@@ -53,7 +55,7 @@ export default function HeroSection() {
               aria-label="Request a free demo of our custom AI solutions"
               onClick={handlePrimaryClick}
             >
-              {isLoading ? "Request My Free Demo" : AB_TEST_CONFIG.variants[variant].primaryButton}
+              {t("hero.ctaButton")}
             </Button>
           </div>
         </div>

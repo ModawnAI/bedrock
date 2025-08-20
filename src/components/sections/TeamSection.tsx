@@ -66,7 +66,7 @@ export default function TeamSection() {
                     Experience: Salesforce | Education: Wharton MBA, Stanford University
                   </p>
                   <p className="text-muted-foreground text-base lg:text-lg leading-relaxed">
-                    Paul is obsessed with building technology that people actually want to use. With a background in Product Design from Stanford University and GTM strategy from Salesforce, he specializes in transforming powerful AI into intuitive, seamless tools that require little to no learning curve. Having developed go-to-market strategies for cutting-edge software at both Salesforce and Mars & Co., Paul ensures our solutions are not only brilliantly engineered but are also designed to deliver immediate and measurable value. He knows what it takes to build a product that works, sells, and becomes an indispensable asset for your team.
+                  Paul is obsessed with building technology people actually want to use. With a background in Product Design from Stanford University and go-to-market strategy experience at Salesforce and Mars & Co., he specializes in translating complex AI capabilities into clear, intuitive user experiences and compelling commercial strategies. Paul has led the launch and scaling of cutting-edge software solutions across industries, ensuring products not only meet real user needs but also deliver immediate business value. He knows what it takes to bring a product to market that resonates, sells, and becomes an indispensable tool for modern teams.
                   </p>
                 </div>
               </div>

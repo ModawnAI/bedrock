@@ -1,0 +1,258 @@
+{
+  "navigation": {
+    "home": "Startseite",
+    "team": "Team",
+    "caseStudies": "Fallstudien",
+    "faq": "FAQ",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "industries": {
+      "landscaping": "Landschaftsbau",
+      "construction": "Bauwesen",
+      "fieldServices": "Außendienst"
+    },
+    "title": "Hören Sie auf, gegen veraltete Software zu kämpfen. Bauen Sie Ihre Zukunft.",
+    "subtitle": "Wenn sich Ihre Software anfühlt, als wäre sie vor 10 Jahren entwickelt worden -- oder nicht schnell genug innoviert -- dann ist es Zeit für ein Upgrade.",
+    "ctaButton": "Kostenlose Demo anfordern"
+  },
+  "credibility": {
+    "title": "Unser Team bringt Erfahrung von Weltklasse-Organisationen mit."
+  },
+  "strategicInsight": {
+    "title": "Strategische Einsicht trifft auf unerbittliche Umsetzung",
+    "subtitle": "Wir entwickeln nicht nur Software – wir entwerfen Lösungen, die Ihre Arbeitsweise transformieren. Unser Team kombiniert tiefes strategisches Denken mit praktischer Umsetzung, um KI-Systeme zu liefern, die vom ersten Tag an messbaren Geschäftsnutzen schaffen.",
+    "insight": {
+      "title": "Strategische Einsicht",
+      "description": "Wir beginnen damit, Ihr Unternehmen auf fundamentaler Ebene zu verstehen. Unser Team analysiert Ihre Arbeitsabläufe, identifiziert Ineffizienzen und entwirft KI-Lösungen, die sich an Ihren langfristigen Wachstumszielen orientieren – nicht nur an Ihren unmittelbaren Problemen.",
+      "points": [
+        "Tiefgreifende Geschäftsprozessanalyse",
+        "ROI-fokussierte Lösungsarchitektur",
+        "Skalierbare Systemgestaltung für zukünftiges Wachstum"
+      ]
+    },
+    "execution": {
+      "title": "Unerbittliche Umsetzung",
+      "description": "Strategie ohne Umsetzung ist nur Planung. Wir liefern schnell funktionierende Lösungen, iterieren basierend auf realem Feedback und optimieren kontinuierlich die Leistung, bis Sie die Ergebnisse erzielen, die Sie benötigen.",
+      "points": [
+        "Schnelle Prototypenerstellung und Bereitstellung",
+        "Kontinuierliche Leistungsüberwachung",
+        "Iterative Verbesserung basierend auf echten Daten"
+      ]
+    },
+    "result": {
+      "label": "Das Ergebnis",
+      "description": "KI-Lösungen, die nicht nur funktionieren – sie transformieren Ihre Geschäftsabläufe und liefern messbaren ROI innerhalb von Monaten, nicht Jahren."
+    }
+  },
+  "problems": {
+    "title": "Wenn sich Ihre Software anfühlt, als wäre sie vor 10 Jahren entwickelt worden – oder nicht schnell genug innoviert – dann war sie es wahrscheinlich.",
+    "items": {
+      "workflows": {
+        "title": "Frustrierende Arbeitsabläufe",
+        "description": "Zwingen Sie Ihr Team dazu, sich an starre, ineffiziente Software anzupassen?"
+      },
+      "costs": {
+        "title": "Himmelhohe Kosten",
+        "description": "Zahlen Sie für Funktionen, die Sie nicht brauchen, während die Preise steigen?"
+      },
+      "innovation": {
+        "title": "Stagnierende Innovation",
+        "description": "Warten Sie endlos auf Updates, die nie kommen, während Konkurrenten mit KI vorankommen?"
+      },
+      "time": {
+        "title": "Verschwendete Zeit",
+        "description": "Verlieren Sie Stunden mit manueller Dateneingabe und sich wiederholenden Aufgaben?"
+      }
+    }
+  },
+  "team": {
+    "title": "Strategische Einsicht trifft auf unerbittliche Umsetzung",
+    "subtitle": "Wir sind hochmotivierte Menschen, die nicht an Work-Life-Balance glauben – wir wollen einfach den besten Service und das beste Produkt liefern. Unser technisches Büro in Seoul, Südkorea, führt ein enges, unermüdliches Team, das sich der Aufgabe verschrieben hat, die neueste KI aus dem Labor in Ihr Unternehmen zu bringen und Tag und Nacht daran arbeitet, Ihr Unternehmen zu optimieren.",
+    "members": {
+      "chris": {
+        "name": "Chris Peeler",
+        "experience": "Erfahrung: Bain & Company | Ausbildung: Wharton MBA, Princeton University",
+        "description": "Chris zerlegt komplexe operative Herausforderungen und entwirft die Blaupausen für kraftvolle, effektive Lösungen. Bei Bain & Company beriet er branchenführende Unternehmen bei ihren kritischsten Geschäftsproblemen. Aber seine strategische Einsicht ist in praktischer Realität verwurzelt; mit direkter Erfahrung in der Landschaftsbaubranche versteht er die alltäglichen Frustrationen, die veraltete Software für Dienstleistungsunternehmen schafft. Diese einzigartige Mischung aus Boardroom-Strategie und Baustellen-Pragmatismus stellt sicher, dass jede Lösung, die wir entwickeln, nicht nur technologisch fortschrittlich ist, sondern perfekt darauf zugeschnitten, messbare Ergebnisse für unsere Kunden zu erzielen."
+      },
+      "paul": {
+        "name": "Paul Mewes",
+        "experience": "Erfahrung: Salesforce | Ausbildung: Wharton MBA, Stanford University (B.E. Produktdesign)",
+        "description": "Paul ist besessen davon, Technologie zu entwickeln, die Menschen tatsächlich nutzen wollen. Mit einem Hintergrund in Produktdesign von der Stanford University und GTM-Strategie von Salesforce spezialisiert er sich darauf, mächtige KI in intuitive, nahtlose Tools zu verwandeln, die wenig bis gar keine Lernkurve erfordern. Nachdem er Go-to-Market-Strategien für hochmoderne Software sowohl bei Salesforce als auch bei Mars & Co. entwickelt hat, stellt Paul sicher, dass unsere Lösungen nicht nur brillant entwickelt sind, sondern auch darauf ausgelegt, sofortigen und messbaren Wert zu liefern. Er weiß, was es braucht, um ein Produkt zu entwickeln, das funktioniert, sich verkauft und zu einem unverzichtbaren Asset für Ihr Team wird."
+      },
+      "kj": {
+        "name": "KJ Yoo",
+        "experience": "Erfahrung: Porsche Engineering",
+        "description": "Von unserem technischen Hub in Seoul aus leitet KJ das unerbittliche Engineering-Team, das die KI-Lösungen unserer Kunden zum Leben erweckt. In Korea perfektionierte er ein Modell für die Betreuung von Unternehmen durch die Integration der weltweit fortschrittlichsten KI für sofortige, praktische Ergebnisse. KJs Philosophie konzentriert sich auf strategische Anwendung, nicht auf abstrakte Forschung – er fokussiert sich darauf, mächtige, bewährte KI-Tools zu nutzen, um schnellen ROI und erhebliche operative Effizienz zu liefern. Jetzt bringt er dieses kampferprobte Playbook exklusiv über Bedrock auf den US-Markt. Dieser Ansatz, aufgebaut auf einem Fundament von Weltklasse-Präzision aus seiner Zeit als Ingenieur bei Porsche, stellt sicher, dass unsere Kunden Lösungen erhalten, die zuverlässig, effektiv und bereit sind, vom ersten Tag an zu funktionieren."
+      }
+    }
+  },
+  "caseStudies": {
+    "title": "Echte KI-Lösungen, die echte Unternehmen transformiert haben",
+    "items": {
+      "landscaping": {
+        "title": "Sprachaktivierter Angebotsgenerator",
+        "industry": "Landschaftsbauunternehmen",
+        "challenge": {
+          "title": "Die Herausforderung",
+          "description": "Über 3 Stunden für die Erstellung detaillierter Angebote für jeden potenziellen Kunden, einschließlich Standortmessungen, Pflanzenauswahl, Arbeitskostenschätzungen und Zeitplanprojektionen. Der manuelle Prozess war fehleranfällig und hinderte das Team daran, mehr Projekte anzubieten."
+        },
+        "solution": {
+          "title": "Unsere Lösung",
+          "description": "Sprachaktivierte KI, die umfassende Angebote in Minuten generiert. Der Eigentümer geht einfach über das Grundstück, beschreibt den Umfang über Sprachnotizen, und unsere KI erstellt sofort professionelle Angebote mit genauen Preisen, Zeitplänen und detaillierten Spezifikationen."
+        },
+        "result": {
+          "title": "Die Auswirkung",
+          "description": "90% Reduzierung der Angebotszeit, 40% Steigerung des Angebotsvolumens und 25% höhere Gewinnrate durch schnellere Antwortzeiten und wettbewerbsfähigere Preise."
+        }
+      },
+      "construction": {
+        "title": "Automatisiertes Materialbestellsystem",
+        "industry": "Bauunternehmer",
+        "challenge": {
+          "title": "Die Herausforderung",
+          "description": "Manuelle Materialbestellungen führten zu häufigen Engpässen, Überbeständen und Projektverzögerungen. Die Koordination zwischen mehreren Lieferanten bei gleichzeitiger Verfolgung sich ändernder Projektanforderungen verbrauchte über 15 Stunden pro Woche."
+        },
+        "solution": {
+          "title": "Unsere Lösung",
+          "description": "KI-gestütztes System, das automatisch den Projektfortschritt verfolgt, Materialbedarf vorhersagt und Bestellungen bei bevorzugten Lieferanten aufgibt. Das System lernt aus historischen Daten, um Timing und Mengen zu optimieren."
+        },
+        "result": {
+          "title": "Die Auswirkung",
+          "description": "85% Reduzierung materialbedingter Verzögerungen, 30% Senkung der Materialkosten durch bessere Planung und 15 Stunden pro Woche Einsparung bei Verwaltungsaufgaben."
+        }
+      },
+      "hvac": {
+        "title": "Intelligente Terminplanung & Routenoptimierung",
+        "industry": "HLK-Serviceunternehmen",
+        "challenge": {
+          "title": "Die Herausforderung",
+          "description": "Ineffiziente Routenplanung und Terminierung führten dazu, dass Techniker übermäßige Strecken fuhren, Kunden sich über verspätete Ankünfte beschwerten und Notrufe nicht in volle Terminpläne eingepasst werden konnten."
+        },
+        "solution": {
+          "title": "Unsere Lösung",
+          "description": "KI-Terminplanungssystem, das Routen in Echtzeit optimiert, automatisch für Verkehr und Auftragskomplexität anpasst und dynamisch umplant, um Notrufe bei minimaler Störung zu berücksichtigen."
+        },
+        "result": {
+          "title": "Die Auswirkung",
+          "description": "45% Reduzierung der Fahrzeit, 60% Verbesserung pünktlicher Ankünfte und Fähigkeit, 25% mehr Serviceanrufe pro Tag mit derselben Teamgröße zu bearbeiten."
+        }
+      },
+      "cleaning": {
+        "title": "Intelligentes Qualitätskontrollsystem",
+        "industry": "Gewerblicher Reinigungsservice",
+        "challenge": {
+          "title": "Die Herausforderung",
+          "description": "Qualitätskontrolle erforderte manuelle Standortbesuche und Checklisten, was es schwierig machte, konsistenten Service an über 50 Standorten zu gewährleisten, während Kundenbeschwerden verwaltet und Standards aufrechterhalten wurden."
+        },
+        "solution": {
+          "title": "Unsere Lösung",
+          "description": "Computer-Vision-System, das Fotos von Reinigungsteams analysiert, um Aufgabenerfüllung zu verifizieren, Bereiche identifiziert, die Aufmerksamkeit benötigen, und automatisch Qualitätsberichte für Kunden generiert."
+        },
+        "result": {
+          "title": "Die Auswirkung",
+          "description": "70% Reduzierung der Qualitätskontrollzeit, 50% Rückgang der Kundenbeschwerden und 95% Verbesserung der Servicekonsistenz an allen Standorten."
+        }
+      }
+    }
+  },
+  "faq": {
+    "title": "Beantwortung Ihrer Fragen",
+    "items": {
+      "implementation": {
+        "question": "Wie lange dauert die Implementierung normalerweise?",
+        "answer": "Die meisten Projekte werden innerhalb von 3 Monaten abgeschlossen. Wir beginnen mit einer funktionierenden Demo in 5 Werktagen und gehen dann zur vollständigen Implementierung über. Größere, komplexere Systeme können länger dauern, aber wir geben Ihnen vorab einen klaren Zeitplan."
+      },
+      "data": {
+        "question": "Was passiert mit unseren Daten?",
+        "answer": "Ihre Daten bleiben Ihre. Wir behalten, speichern oder verwenden Ihre Daten niemals für andere Zwecke. Die gesamte Datenverarbeitung erfolgt in Ihrer sicheren Umgebung, und wir unterzeichnen umfassende NDAs vor Projektbeginn."
+      },
+      "pricing": {
+        "question": "Wie viel kostet eine maßgeschneiderte Lösung?",
+        "answer": "Jedes Projekt ist anders, daher bieten wir maßgeschneiderte Preise basierend auf Ihren spezifischen Bedürfnissen. Die meisten Kunden sehen ROI innerhalb des ersten Jahres. Wir geben Ihnen nach unserem Entdeckungsgespräch eine detaillierte Kostenaufschlüsselung ohne versteckte Gebühren oder Überraschungen."
+      },
+      "industries": {
+        "question": "Auf welche Branchen spezialisieren Sie sich?",
+        "answer": "Wir konzentrieren uns auf Dienstleistungsbranchen einschließlich Landschaftsbau, Bauwesen, Außendienst und Wohndienstleistungen. Unser Team hat praktische Erfahrung in diesen Sektoren, sodass wir die einzigartigen operativen Herausforderungen verstehen und Lösungen entwickeln können, die tatsächlich im Feld funktionieren."
+      },
+      "team": {
+        "question": "Was macht Ihr Team anders als andere Softwareentwickler?",
+        "answer": "Wir entwickeln bessere, benutzerfreundlichere Technologie als Legacy-Softwareentwickler, weil unsere Technik KI-nativ ist und wir bei jedem Schritt Hand in Hand mit Ihnen arbeiten. Unser Team kombiniert erstklassige Beratungserfahrung (Bain & Company), Unternehmenssoftware-Expertise (Salesforce) und Präzisionstechnik (Porsche) mit echter operativer Erfahrung in Dienstleistungsbranchen."
+      },
+      "technology": {
+        "question": "Welche KI-Technologien verwenden Sie?",
+        "answer": "Wir verwenden bewährte, unternehmenstaugliche KI-Tools anstatt experimenteller Technologie. Dazu gehören fortschrittliche Sprachmodelle für Automatisierung, Computer Vision für Felddokumentation und prädiktive Analytik für operative Optimierung. Wir konzentrieren uns auf praktische KI, die sofortigen ROI liefert, nicht auf Forschungsprojekte."
+      },
+      "integration": {
+        "question": "Wird dies mit unserer bestehenden Software integriert?",
+        "answer": "Ja, nahtlose Integration ist ein Kernbestandteil unseres Ansatzes. Wir verbinden uns mit Ihrem bestehenden CRM, Buchhaltungssoftware, Terminplanungstools und anderen Systemen. Unser Ziel ist es, Ihren aktuellen Arbeitsablauf zu verbessern, nicht alles zu ersetzen, was Sie bereits effektiv nutzen."
+      },
+      "support": {
+        "question": "Welche Art von laufender Unterstützung bieten Sie?",
+        "answer": "Wir bieten umfassende Schulungen für Ihr Team, detaillierte Dokumentation und laufenden technischen Support. Sie haben direkten Zugang zu unserem Entwicklungsteam für Fragen, Updates und Optimierungen. Wir investieren in Ihren langfristigen Erfolg, nicht nur in die anfängliche Implementierung."
+      },
+      "demo": {
+        "question": "Was passiert während des Demo-Prozesses?",
+        "answer": "Wir beginnen mit einem Entdeckungsgespräch, um Ihre spezifischen Herausforderungen zu verstehen, und erstellen dann innerhalb von 5 Werktagen eine funktionsfähige Demo mit Ihren tatsächlichen Geschäftsszenarien. Das ist keine generische Präsentation – es ist ein funktionaler Prototyp, der auf Ihre Abläufe zugeschnitten ist und den Sie mit echten Daten testen können."
+      },
+      "roi": {
+        "question": "Wie schnell werden wir eine Kapitalrendite sehen?",
+        "answer": "Die meisten Kunden sehen messbare Verbesserungen innerhalb des ersten Monats der Implementierung. Basierend auf unseren Fallstudien umfassen typische Ergebnisse 25-90% Zeiteinsparungen bei Schlüsselprozessen, 25-45% Verbesserung der Konversionsraten und erhebliche Kostensenkungen. Vollständiger ROI wird normalerweise innerhalb von 6-12 Monaten erreicht."
+      },
+      "maintenance": {
+        "question": "Benötigen wir technisches Personal zur Wartung der KI-Lösung?",
+        "answer": "Keine technische Expertise erforderlich. Wir entwerfen unsere Lösungen benutzerfreundlich und selbstwartend. Ihr Team erhält umfassende Schulungen für den täglichen Betrieb, und wir handhaben alle technische Wartung, Updates und Optimierungen remote. Sie konzentrieren sich auf Ihr Geschäft, wir kümmern uns um die Technologie."
+      },
+      "scalability": {
+        "question": "Kann die Lösung mit unserem Geschäft wachsen?",
+        "answer": "Absolut. Wir entwickeln skalierbare Lösungen, die sich an Ihr Wachstum anpassen. Ob Sie zu neuen Standorten expandieren, Dienstleistungen hinzufügen oder die Teamgröße erhöhen – unsere KI-Systeme sind darauf ausgelegt, nahtlos zu skalieren. Wir können auch neue Funktionen und Fähigkeiten hinzufügen, während sich Ihr Geschäft entwickelt."
+      }
+    }
+  },
+  "contact": {
+    "title": "Bereit, Ihr Unternehmen zu transformieren?",
+    "subtitle": "Erhalten Sie eine kostenlose Demo von maßgeschneiderten KI-Lösungen, die speziell für Ihre Branche entwickelt wurden.",
+    "form": {
+      "name": "Vollständiger Name",
+      "email": "E-Mail-Adresse",
+      "company": "Firmenname",
+      "message": "Erzählen Sie uns von Ihrer größten operativen Herausforderung",
+      "submit": "Kostenlose Demo anfordern",
+      "submitting": "Wird gesendet...",
+      "success": "Vielen Dank! Wir melden uns innerhalb von 24 Stunden bei Ihnen.",
+      "error": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut."
+    },
+    "info": {
+      "title": "Kontakt aufnehmen",
+      "email": "team@bedrock-innovations.com",
+      "response": "Wir antworten normalerweise innerhalb von 24 Stunden"
+    },
+    "legal": {
+      "terms": "Nutzungsbedingungen",
+      "privacy": "Datenschutzrichtlinie",
+      "text": "Durch das Absenden dieses Formulars stimmen Sie unseren {terms} und {privacy} zu."
+    }
+  },
+  "metadata": {
+    "home": {
+      "title": "Bedrock Innovations - Maßgeschneiderte KI-Lösungen für Dienstleistungsbranchen",
+      "description": "Wir entwickeln maßgeschneiderte, durchgängige KI-Lösungen für Führungskräfte in der Dienstleistungsbranche in Landschaftsbau, Bauwesen und Außendienst, die müde von klobigen, überteuerten Systemen sind, die nicht schnell genug innovieren."
+    },
+    "team": {
+      "title": "Unser Team - Bedrock Innovations",
+      "description": "Lernen Sie das Team hinter Bedrock Innovations kennen. Strategische Einsicht trifft auf unerbittliche Umsetzung mit Erfahrung von Bain & Company, Salesforce, Princeton, Wharton, Stanford und Porsche."
+    },
+    "caseStudies": {
+      "title": "Fallstudien - Bedrock Innovations",
+      "description": "Sehen Sie echte KI-Lösungen, die echte Unternehmen transformiert haben. Entdecken Sie, wie wir Landschaftsbau-, Bau- und Außendienstunternehmen geholfen haben, Kosten zu senken, Zeit zu sparen und Abläufe zu optimieren."
+    },
+    "faq": {
+      "title": "FAQ - Bedrock Innovations",
+      "description": "Häufig gestellte Fragen zu unseren maßgeschneiderten KI-Lösungen für Landschaftsbau, Bauwesen und Außendienst. Erfahren Sie mehr über Implementierung, Preise, Support und mehr."
+    },
+    "contact": {
+      "title": "Kontakt - Bedrock Innovations",
+      "description": "Nehmen Sie Kontakt mit Bedrock Innovations auf. Fordern Sie eine kostenlose Demo unserer maßgeschneiderten KI-Lösungen für Landschaftsbau, Bauwesen und Außendienst an."
+    }
+  }
+}

@@ -1,15 +1,18 @@
 "use client"
 
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useLanguage, Language, languageFlags, languageNames } from "@/lib/i18n";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
   const pathname = usePathname();
+  const { language, setLanguage, t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,12 +25,17 @@ export default function Navigation() {
   }, []);
 
   const navigationLinks = [
-    { href: "/", label: "Home" },
-    { href: "/team", label: "Team" },
-    { href: "/case-studies", label: "Case Studies" },
-    { href: "/faq", label: "FAQ" },
-    { href: "/contact", label: "Contact" },
+    { href: "/", label: t("navigation.home") },
+    { href: "/team", label: t("navigation.team") },
+    { href: "/case-studies", label: t("navigation.caseStudies") },
+    { href: "/faq", label: t("navigation.faq") },
+    { href: "/contact", label: t("navigation.contact") },
   ];
+
+  const handleLanguageChange = (newLanguage: Language) => {
+    setLanguage(newLanguage);
+    setIsLanguageDropdownOpen(false);
+  };
 
   return (
     <nav 
@@ -77,6 +85,37 @@ export default function Navigation() {
                 {link.label}
               </Link>
             ))}
+            
+            {/* Language Dropdown */}
+            <div className="relative">
+              <button
+                onClick={() => setIsLanguageDropdownOpen(!isLanguageDropdownOpen)}
+                className="flex items-center space-x-2 px-3 py-2 rounded-md hover:bg-muted transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                aria-expanded={isLanguageDropdownOpen}
+                aria-label="Select language"
+              >
+                <span className="text-lg">{languageFlags[language]}</span>
+                <span className="text-sm font-medium">{languageNames[language]}</span>
+                <ChevronDown className="w-4 h-4" />
+              </button>
+              
+              {isLanguageDropdownOpen && (
+                <div className="absolute right-0 mt-2 w-48 bg-background border border-border rounded-md shadow-lg z-50">
+                  {(Object.keys(languageFlags) as Language[]).map((lang) => (
+                    <button
+                      key={lang}
+                      onClick={() => handleLanguageChange(lang)}
+                      className={`w-full flex items-center space-x-3 px-4 py-2 text-left hover:bg-muted transition-colors ${
+                        language === lang ? "bg-muted text-foreground" : "text-muted-foreground"
+                      }`}
+                    >
+                      <span className="text-lg">{languageFlags[lang]}</span>
+                      <span className="text-sm font-medium">{languageNames[lang]}</span>
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
           
           {/* Mobile Menu Button */}
@@ -117,6 +156,30 @@ export default function Navigation() {
                   {link.label}
                 </Link>
               ))}
+              
+              {/* Mobile Language Selector */}
+              <div className="px-4 py-2 border-t border-border/50 mt-2 pt-4">
+                <div className="text-sm font-medium text-muted-foreground mb-2">Language</div>
+                <div className="grid grid-cols-3 gap-2">
+                  {(Object.keys(languageFlags) as Language[]).map((lang) => (
+                    <button
+                      key={lang}
+                      onClick={() => {
+                        handleLanguageChange(lang);
+                        setIsMobileMenuOpen(false);
+                      }}
+                      className={`flex flex-col items-center space-y-1 p-2 rounded-md transition-colors ${
+                        language === lang 
+                          ? "bg-primary text-primary-foreground" 
+                          : "hover:bg-muted text-muted-foreground"
+                      }`}
+                    >
+                      <span className="text-lg">{languageFlags[lang]}</span>
+                      <span className="text-xs font-medium">{languageNames[lang]}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         )}

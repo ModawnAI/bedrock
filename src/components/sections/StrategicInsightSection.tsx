@@ -1,6 +1,10 @@
+"use client"
+
 import { Brain, Target, Zap, TrendingUp } from "lucide-react";
+import { useLanguage } from "@/lib/i18n";
 
 export default function StrategicInsightSection() {
+  const { t } = useLanguage();
   return (
     <section className="py-16 sm:py-20 lg:py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -14,10 +18,10 @@ export default function StrategicInsightSection() {
             </div>
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-            Strategic Insight Meets Relentless Execution
+            {t("strategicInsight.title")}
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            We don&apos;t just build software—we architect solutions that transform how you operate. Our team combines deep strategic thinking with hands-on execution to deliver AI systems that create measurable business impact from day one.
+            {t("strategicInsight.subtitle")}
           </p>
         </div>
         

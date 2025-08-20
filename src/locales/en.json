@@ -1,0 +1,258 @@
+{
+  "navigation": {
+    "home": "Home",
+    "team": "Team",
+    "caseStudies": "Case Studies",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "hero": {
+    "industries": {
+      "landscaping": "Landscaping",
+      "construction": "Construction",
+      "fieldServices": "Field Services"
+    },
+    "title": "Stop Fighting Outdated Software. Start Building Your Future.",
+    "subtitle": "If your software feels like it was built 10 years ago -- or isn't innovating fast enough -- then it's time to upgrade.",
+    "ctaButton": "Request My Free Demo"
+  },
+  "credibility": {
+    "title": "Our team brings experience from world-class organizations."
+  },
+  "strategicInsight": {
+    "title": "Strategic Insight Meets Relentless Execution",
+    "subtitle": "We don't just build software—we architect solutions that transform how you operate. Our team combines deep strategic thinking with hands-on execution to deliver AI systems that create measurable business impact from day one.",
+    "insight": {
+      "title": "Strategic Insight",
+      "description": "We start by understanding your business at a fundamental level. Our team analyzes your workflows, identifies inefficiencies, and designs AI solutions that align with your long-term growth objectives—not just your immediate pain points.",
+      "points": [
+        "Deep-dive business process analysis",
+        "ROI-focused solution architecture",
+        "Scalable system design for future growth"
+      ]
+    },
+    "execution": {
+      "title": "Relentless Execution",
+      "description": "Strategy without execution is just planning. We deliver working solutions rapidly, iterate based on real-world feedback, and continuously optimize performance until you achieve the results you need.",
+      "points": [
+        "Rapid prototyping and deployment",
+        "Continuous performance monitoring",
+        "Iterative improvement based on real data"
+      ]
+    },
+    "result": {
+      "label": "The Result",
+      "description": "AI solutions that don't just work—they transform your business operations and deliver measurable ROI within months, not years."
+    }
+  },
+  "problems": {
+    "title": "If your software feels like it was built 10 years ago—or isn't innovating fast enough—it probably was.",
+    "items": {
+      "workflows": {
+        "title": "Frustrating Workflows",
+        "description": "Forcing your team to adapt to rigid, inefficient software?"
+      },
+      "costs": {
+        "title": "Sky-High Costs",
+        "description": "Paying for features you don't need while prices climb?"
+      },
+      "innovation": {
+        "title": "Stagnant Innovation",
+        "description": "Waiting endlessly for updates that never come while competitors advance with AI?"
+      },
+      "time": {
+        "title": "Wasted Time",
+        "description": "Losing hours to manual data entry and repetitive tasks?"
+      }
+    }
+  },
+  "team": {
+    "title": "Strategic Insight Meets Relentless Execution",
+    "subtitle": "We're highly driven people who don't believe in work/life balance—we just want to deliver the best service and product. Our technical office in Seoul, South Korea, runs a tight, tireless team committed to bringing the latest AI from the lab to your business, working day and night to optimize your company.",
+    "members": {
+      "chris": {
+        "name": "Chris Peeler",
+        "experience": "Experience: Bain & Company | Education: Wharton MBA, Princeton University",
+        "description": "Chris dismantles complex operational challenges and designs the blueprints for powerful, effective solutions. At Bain & Company, he advised industry-leading companies on their most critical business problems. But his strategic insight is grounded in hands-on reality; with direct experience in the landscaping industry, he understands the on-the-ground frustrations that outdated software creates for service businesses. This unique blend of boardroom strategy and job-site pragmatism ensures that every solution we build is not just technologically advanced, but perfectly tailored to drive bottom-line results for our clients."
+      },
+      "paul": {
+        "name": "Paul Mewes",
+        "experience": "Experience: Salesforce | Education: Wharton MBA, Stanford University (B.E. Product Design)",
+        "description": "Paul is obsessed with building technology that people actually want to use. With a background in Product Design from Stanford University and GTM strategy from Salesforce, he specializes in transforming powerful AI into intuitive, seamless tools that require little to no learning curve. Having developed go-to-market strategies for cutting-edge software at both Salesforce and Mars & Co., Paul ensures our solutions are not only brilliantly engineered but are also designed to deliver immediate and measurable value. He knows what it takes to build a product that works, sells, and becomes an indispensable asset for your team."
+      },
+      "kj": {
+        "name": "KJ Yoo",
+        "experience": "Experience: Porsche Engineering",
+        "description": "From our technical hub in Seoul, KJ leads the relentless engineering team that brings our clients' AI solutions to life. In Korea, he perfected a model for servicing businesses by integrating the world's most advanced AI for immediate, practical results. KJ's philosophy is centered on strategic application, not abstract research—he focuses on leveraging powerful, proven AI tools to deliver rapid ROI and significant operational efficiencies. Now, he brings this battle-tested playbook exclusively to the U.S. market through Bedrock. This approach, built on a foundation of world-class precision from his time as an engineer at Porsche, ensures our clients receive solutions that are reliable, effective, and ready to perform from day one."
+      }
+    }
+  },
+  "caseStudies": {
+    "title": "Real AI Solutions That Transformed Real Businesses",
+    "items": {
+      "landscaping": {
+        "title": "Voice-Activated Proposal Generator",
+        "industry": "Landscaping Company",
+        "challenge": {
+          "title": "The Challenge",
+          "description": "Spending 3+ hours creating detailed proposals for each potential client, including site measurements, plant selections, labor estimates, and timeline projections. The manual process was error-prone and prevented the team from bidding on more projects."
+        },
+        "solution": {
+          "title": "Our Solution",
+          "description": "Voice-activated AI that generates comprehensive proposals in minutes. The owner simply walks the property, describes the scope via voice notes, and our AI instantly creates professional proposals with accurate pricing, timelines, and detailed specifications."
+        },
+        "result": {
+          "title": "The Impact",
+          "description": "90% reduction in proposal time, 40% increase in bid volume, and 25% higher win rate due to faster response times and more competitive pricing."
+        }
+      },
+      "construction": {
+        "title": "Automated Material Ordering System",
+        "industry": "Construction Contractor",
+        "challenge": {
+          "title": "The Challenge",
+          "description": "Manual material ordering led to frequent shortages, overstocking, and project delays. Coordinating between multiple suppliers while tracking changing project requirements was consuming 15+ hours per week."
+        },
+        "solution": {
+          "title": "Our Solution",
+          "description": "AI-powered system that automatically tracks project progress, predicts material needs, and places orders with preferred suppliers. The system learns from historical data to optimize timing and quantities."
+        },
+        "result": {
+          "title": "The Impact",
+          "description": "85% reduction in material-related delays, 30% decrease in material costs through better planning, and 15 hours per week saved on administrative tasks."
+        }
+      },
+      "hvac": {
+        "title": "Smart Scheduling & Route Optimization",
+        "industry": "HVAC Service Company",
+        "challenge": {
+          "title": "The Challenge",
+          "description": "Inefficient routing and scheduling led to technicians driving excessive miles, customer complaints about late arrivals, and inability to fit emergency calls into packed schedules."
+        },
+        "solution": {
+          "title": "Our Solution",
+          "description": "AI scheduling system that optimizes routes in real-time, automatically adjusts for traffic and job complexity, and dynamically reschedules to accommodate emergency calls while minimizing disruption."
+        },
+        "result": {
+          "title": "The Impact",
+          "description": "45% reduction in drive time, 60% improvement in on-time arrivals, and ability to handle 25% more service calls per day with the same team size."
+        }
+      },
+      "cleaning": {
+        "title": "Intelligent Quality Control System",
+        "industry": "Commercial Cleaning Service",
+        "challenge": {
+          "title": "The Challenge",
+          "description": "Quality control required manual site visits and checklists, making it difficult to ensure consistent service across 50+ locations while managing client complaints and maintaining standards."
+        },
+        "solution": {
+          "title": "Our Solution",
+          "description": "Computer vision system that analyzes photos from cleaning teams to verify task completion, identifies areas needing attention, and automatically generates quality reports for clients."
+        },
+        "result": {
+          "title": "The Impact",
+          "description": "70% reduction in quality control time, 50% decrease in client complaints, and 95% improvement in service consistency across all locations."
+        }
+      }
+    }
+  },
+  "faq": {
+    "title": "Answering Your Questions",
+    "items": {
+      "implementation": {
+        "question": "How long does implementation typically take?",
+        "answer": "Most projects are completed within 3 months. We start with a working demo in 5 business days, then move to full implementation. Larger, more complex systems may take longer, but we'll give you a clear timeline upfront."
+      },
+      "data": {
+        "question": "What happens to our data?",
+        "answer": "Your data stays yours. We never keep, store, or use your data for any other purpose. All data processing happens within your secure environment, and we sign comprehensive NDAs before any project begins."
+      },
+      "pricing": {
+        "question": "How much does a custom solution cost?",
+        "answer": "Every project is different, so we provide custom pricing based on your specific needs. Most clients see ROI within the first year. We'll give you a detailed cost breakdown after our discovery call, with no hidden fees or surprises."
+      },
+      "industries": {
+        "question": "What industries do you specialize in?",
+        "answer": "We focus on service industries including landscaping, construction, field services, and residential services. Our team has hands-on experience in these sectors, so we understand the unique operational challenges and can build solutions that actually work in the field."
+      },
+      "team": {
+        "question": "What makes your team different from other software developers?",
+        "answer": "We build better, easier-to-use technology than legacy software developers because our tech is AI-native and we work with you hand-in-hand every step of the way. Our team combines top-tier consulting experience (Bain & Company), enterprise software expertise (Salesforce), and precision engineering (Porsche), with real operational experience in service industries."
+      },
+      "technology": {
+        "question": "What AI technologies do you use?",
+        "answer": "We use proven, enterprise-grade AI tools rather than experimental technology. This includes advanced language models for automation, computer vision for field documentation, and predictive analytics for operational optimization. We focus on practical AI that delivers immediate ROI, not research projects."
+      },
+      "integration": {
+        "question": "Will this integrate with our existing software?",
+        "answer": "Yes, seamless integration is a core part of our approach. We connect with your existing CRM, accounting software, scheduling tools, and other systems. Our goal is to enhance your current workflow, not replace everything you're already using effectively."
+      },
+      "support": {
+        "question": "What kind of ongoing support do you provide?",
+        "answer": "We provide comprehensive training for your team, detailed documentation, and ongoing technical support. You'll have direct access to our development team for questions, updates, and optimizations. We're invested in your long-term success, not just the initial implementation."
+      },
+      "demo": {
+        "question": "What happens during the demo process?",
+        "answer": "We start with a discovery call to understand your specific challenges, then build a working demo using your actual business scenarios within 5 business days. This isn't a generic presentation—it's a functional prototype tailored to your operations that you can test with real data."
+      },
+      "roi": {
+        "question": "How quickly will we see return on investment?",
+        "answer": "Most clients see measurable improvements within the first month of implementation. Based on our case studies, typical results include 25-90% time savings on key processes, 25-45% improvement in conversion rates, and significant cost reductions. Full ROI is usually achieved within 6-12 months."
+      },
+      "maintenance": {
+        "question": "Do we need technical staff to maintain the AI solution?",
+        "answer": "No technical expertise required. We design our solutions to be user-friendly and self-maintaining. Your team will receive comprehensive training on daily operations, and we handle all technical maintenance, updates, and optimizations remotely. You focus on your business, we handle the technology."
+      },
+      "scalability": {
+        "question": "Can the solution grow with our business?",
+        "answer": "Absolutely. We build scalable solutions that adapt to your growth. Whether you're expanding to new locations, adding services, or increasing team size, our AI systems are designed to scale seamlessly. We can also add new features and capabilities as your business evolves."
+      }
+    }
+  },
+  "contact": {
+    "title": "Ready to Transform Your Business?",
+    "subtitle": "Get a free demo of custom AI solutions built specifically for your industry.",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "company": "Company Name",
+      "message": "Tell us about your biggest operational challenge",
+      "submit": "Request My Free Demo",
+      "submitting": "Sending...",
+      "success": "Thank you! We'll be in touch within 24 hours.",
+      "error": "Something went wrong. Please try again."
+    },
+    "info": {
+      "title": "Get in Touch",
+      "email": "team@bedrock-innovations.com",
+      "response": "We typically respond within 24 hours"
+    },
+    "legal": {
+      "terms": "Terms of service",
+      "privacy": "privacy policy",
+      "text": "By submitting this form, you agree to our {terms} and {privacy}."
+    }
+  },
+  "metadata": {
+    "home": {
+      "title": "Bedrock Innovations - Custom AI Solutions for Service Industries",
+      "description": "We build custom, end-to-end AI solutions for service industry leaders in landscaping, construction, and field services who are tired of clunky, overpriced systems that aren't innovating fast enough."
+    },
+    "team": {
+      "title": "Our Team - Bedrock Innovations",
+      "description": "Meet the team behind Bedrock Innovations. Strategic insight meets relentless execution with experience from Bain & Company, Salesforce, Princeton, Wharton, Stanford, and Porsche."
+    },
+    "caseStudies": {
+      "title": "Case Studies - Bedrock Innovations",
+      "description": "See real AI solutions that transformed real businesses. Discover how we've helped landscaping, construction, and field service companies cut costs, save time, and smooth operations."
+    },
+    "faq": {
+      "title": "FAQ - Bedrock Innovations",
+      "description": "Frequently asked questions about our custom AI solutions for landscaping, construction, and field services. Learn about implementation, pricing, support, and more."
+    },
+    "contact": {
+      "title": "Contact Us - Bedrock Innovations",
+      "description": "Get in touch with Bedrock Innovations. Request a free demo of our custom AI solutions for landscaping, construction, and field services."
+    }
+  }
+}

@@ -1,11 +1,15 @@
+"use client"
+
 import Image from "next/image";
+import { useLanguage } from "@/lib/i18n";
 
 export default function CredibilityBar() {
+  const { t } = useLanguage();
   return (
     <section className="py-12 sm:py-16 bg-muted">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-center text-xl sm:text-2xl font-semibold mb-6 sm:mb-8 text-muted-foreground">
-          Our team brings experience from world-class organizations.
+          {t("credibility.title")}
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 sm:gap-8 lg:gap-12 items-center" role="list" aria-label="Companies where our team has experience">
           {/* Individual company logos - larger size without borders */}
