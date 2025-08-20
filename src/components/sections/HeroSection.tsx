@@ -47,10 +47,10 @@ export default function HeroSection() {
           </div>
           
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight">
-            Stop Fighting Outdated Software. Start Building Your Future.
+            Simple, Super-Powered Technology Created Just for You
           </h1>
                             <p className="text-lg sm:text-xl md:text-2xl mb-8 max-w-4xl mx-auto text-muted-foreground leading-relaxed">
-                    If your software feels like it was built 10 years ago -- or isn&apos;t innovating fast enough -- <em>then it&apos;s time to upgrade</em>.
+                    Technology should be making your teams more efficient and your job easier, but way too often it is complicated by <em>frustrating workflows, sky-high costs, and wasted time</em>.
                   </p>
           <div className="flex justify-center items-center">
             <Button 

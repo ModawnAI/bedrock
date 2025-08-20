@@ -1,3 +1,10 @@
 {
-  "/page": "app/page.js"
+  "/api/sitemap/route": "app/api/sitemap/route.js",
+  "/api/request-demo/route": "app/api/request-demo/route.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/page": "app/page.js",
+  "/terms/page": "app/terms/page.js",
+  "/privacy/page": "app/privacy/page.js"
 }

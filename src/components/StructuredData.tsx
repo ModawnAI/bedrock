@@ -3,7 +3,7 @@ export default function StructuredData() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Bedrock Innovations",
-    "description": "We build custom, end-to-end AI solutions for service industry leaders in landscaping, construction, and field services who are tired of clunky, overpriced systems that aren't innovating fast enough.",
+    "description": "We design custom, easy-to-use AI tools for leaders in landscaping, construction, and field services that help them cut costs, save time, and smooth operations.",
     "url": "https://bedrock-innovations.com",
     "logo": "https://bedrock-innovations.com/og-image.png",
     "contactPoint": {

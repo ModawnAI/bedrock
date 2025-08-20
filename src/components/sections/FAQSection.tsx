@@ -50,10 +50,10 @@ export default function FAQSection() {
 
             <AccordionItem value="team-expertise" className="bg-card border rounded-lg hover:shadow-md transition-shadow px-4 sm:px-6">
               <AccordionTrigger className="text-sm sm:text-base font-semibold">
-                What makes your team different from other AI developers?
+                What makes your team different from other software developers?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                Our team combines top-tier consulting experience (Bain & Company), enterprise software expertise (Salesforce), and precision engineering (Porsche). More importantly, we have real operational experience in service industries, so we build solutions based on actual field knowledge, not just technical theory.
+                We build better, easier-to-use technology than legacy software developers because our tech is AI-native and we work with you hand-in-hand every step of the way. Our team combines top-tier consulting experience (Bain & Company), enterprise software expertise (Salesforce), and precision engineering (Porsche), with real operational experience in service industries.
               </AccordionContent>
             </AccordionItem>
 
