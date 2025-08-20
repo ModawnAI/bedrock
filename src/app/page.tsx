@@ -8,7 +8,7 @@ import StructuredData from "@/components/StructuredData";
 
 export const metadata: Metadata = {
   title: "Bedrock Innovations - Custom AI Solutions for Service Industries",
-  description: "We design custom, easy-to-use AI tools for leaders in landscaping, construction, and field services that help them cut costs, save time, and smooth operations.",
+  description: "We build custom, end-to-end AI solutions for service industry leaders in landscaping, construction, and field services who are tired of clunky, overpriced systems that aren't innovating fast enough.",
   keywords: [
     "AI solutions",
     "custom software",
