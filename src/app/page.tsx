@@ -4,13 +4,6 @@ import HeroSection from "@/components/sections/HeroSection";
 import CredibilityBar from "@/components/sections/CredibilityBar";
 import StrategicInsightSection from "@/components/sections/StrategicInsightSection";
 import ProblemSection from "@/components/sections/ProblemSection";
-import SolutionSection from "@/components/sections/SolutionSection";
-import ProcessSection from "@/components/sections/ProcessSection";
-import CaseStudiesSection from "@/components/sections/CaseStudiesSection";
-import TeamSection from "@/components/sections/TeamSection";
-import TestimonialSection from "@/components/sections/TestimonialSection";
-import FAQSection from "@/components/sections/FAQSection";
-import FinalCTASection from "@/components/sections/FinalCTASection";
 import StructuredData from "@/components/StructuredData";
 
 export const metadata: Metadata = {
@@ -95,15 +88,8 @@ export default function Home() {
       <main>
         <HeroSection />
         <CredibilityBar />
-        <TeamSection />
         <StrategicInsightSection />
         <ProblemSection />
-        <SolutionSection />
-        <ProcessSection />
-        <CaseStudiesSection />
-        <TestimonialSection />
-        <FAQSection />
-        <FinalCTASection />
       </main>
     </div>
   );

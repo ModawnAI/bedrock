@@ -1,10 +1,14 @@
 {
-  "/api/sitemap/route": "app/api/sitemap/route.js",
   "/api/request-demo/route": "app/api/request-demo/route.js",
   "/_not-found/page": "app/_not-found/page.js",
+  "/api/sitemap/route": "app/api/sitemap/route.js",
   "/robots.txt/route": "app/robots.txt/route.js",
   "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/contact/page": "app/contact/page.js",
+  "/team/page": "app/team/page.js",
   "/page": "app/page.js",
+  "/case-studies/page": "app/case-studies/page.js",
   "/terms/page": "app/terms/page.js",
-  "/privacy/page": "app/privacy/page.js"
+  "/privacy/page": "app/privacy/page.js",
+  "/faq/page": "app/faq/page.js"
 }

@@ -3,10 +3,13 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,43 +21,12 @@ export default function Navigation() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleNavigation = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
-    e.preventDefault();
-    setIsMobileMenuOpen(false);
-    
-    // Check if we're on the main page
-    if (window.location.pathname === '/') {
-      // We're on the main page, just scroll to the section
-      const targetElement = document.getElementById(targetId);
-      if (targetElement) {
-        targetElement.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-      }
-    } else {
-      // We're on a different page, navigate to main page with hash
-      window.location.href = `/#${targetId}`;
-    }
-  };
-
-  const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    if (window.location.pathname === '/') {
-      // We're on the main page, scroll to top
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    } else {
-      // We're on a different page, navigate to main page
-      window.location.href = '/';
-    }
-  };
-
   const navigationLinks = [
-    { href: "#how-it-works", label: "How It Works" },
-    { href: "#solutions", label: "Solutions" },
-    { href: "#why-us", label: "Why Us" },
-    { href: "#our-team", label: "Our Team" },
-    { href: "#contact", label: "Contact" },
+    { href: "/", label: "Home" },
+    { href: "/team", label: "Team" },
+    { href: "/case-studies", label: "Case Studies" },
+    { href: "/faq", label: "FAQ" },
+    { href: "/contact", label: "Contact" },
   ];
 
   return (
@@ -71,11 +43,11 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <a 
+            <Link 
               href="/" 
-              onClick={handleLogoClick}
               className="flex items-center hover:opacity-80 transition-opacity"
               aria-label="Bedrock Innovations - Go to homepage"
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               <Image
                 src="/logo.svg"
@@ -85,21 +57,25 @@ export default function Navigation() {
                 className="h-12 w-auto"
                 priority
               />
-            </a>
+            </Link>
           </div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navigationLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
-                onClick={(e) => handleNavigation(e, link.href.substring(1))}
-                className="text-muted-foreground hover:text-foreground transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-sm px-2 py-1 font-semibold"
-                aria-label={`Navigate to ${link.label} section`}
+                className={`transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-sm px-2 py-1 font-semibold ${
+                  pathname === link.href 
+                    ? "text-foreground" 
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
+                aria-label={`Navigate to ${link.label} page`}
+                onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </div>
           
@@ -127,15 +103,19 @@ export default function Navigation() {
           >
             <div className="flex flex-col space-y-2">
               {navigationLinks.map((link) => (
-                <a
+                <Link
                   key={link.href}
                   href={link.href}
-                  onClick={(e) => handleNavigation(e, link.href.substring(1))}
-                  className="text-muted-foreground hover:text-foreground transition-colors duration-200 px-4 py-2 rounded-md hover:bg-muted focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 font-semibold"
-                  aria-label={`Navigate to ${link.label} section`}
+                  className={`transition-colors duration-200 px-4 py-2 rounded-md hover:bg-muted focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 font-semibold ${
+                    pathname === link.href 
+                      ? "text-foreground bg-muted" 
+                      : "text-muted-foreground hover:text-foreground"
+                  }`}
+                  aria-label={`Navigate to ${link.label} page`}
+                  onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
             </div>
           </div>

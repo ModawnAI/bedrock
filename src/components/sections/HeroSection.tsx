@@ -16,14 +16,8 @@ export default function HeroSection() {
 
   const handlePrimaryClick = () => {
     trackCTAClick(variant, 'primary');
-    // Navigate to contact section
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
-    }
+    // Navigate to contact page
+    window.location.href = '/contact';
   };
 
   return (
@@ -47,10 +41,10 @@ export default function HeroSection() {
           </div>
           
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight">
-            Simple, Super-Powered Technology Created Just for You
+            Stop Fighting Outdated Software. Start Building Your Future.
           </h1>
                             <p className="text-lg sm:text-xl md:text-2xl mb-8 max-w-4xl mx-auto text-muted-foreground leading-relaxed">
-                    Technology should be making your teams more efficient and your job easier, but way too often it is complicated by <em>frustrating workflows, sky-high costs, and wasted time</em>.
+                    If your software feels like it was built 10 years ago -- or isn&apos;t innovating fast enough -- <em>then it&apos;s time to upgrade</em>.
                   </p>
           <div className="flex justify-center items-center">
             <Button 
