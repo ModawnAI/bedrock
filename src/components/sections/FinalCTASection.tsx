@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Button } from "@/components/ui/button";
@@ -17,10 +18,13 @@ import {
 import { contactFormSchema, type ContactFormData } from "@/lib/schemas";
 import { useABTestVariant, trackConversion } from "@/lib/ab-testing";
 import { useLanguage } from "@/lib/i18n";
+import SuccessModal from "@/components/SuccessModal";
 
 export default function FinalCTASection() {
   const { variant } = useABTestVariant();
   const { t } = useLanguage();
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const [submittedUserName, setSubmittedUserName] = useState<string>("");
   
   const form = useForm<ContactFormData>({
     resolver: zodResolver(contactFormSchema),
@@ -55,7 +59,9 @@ export default function FinalCTASection() {
       // Track conversion for A/B testing
       trackConversion(variant, 'form_submit');
       
-      alert("Thank you! We'll get back to you within one business day.");
+      // Store user name and show success modal
+      setSubmittedUserName(data.fullName);
+      setShowSuccessModal(true);
       form.reset();
     } catch (error) {
       console.error("Form submission error:", error);
@@ -204,6 +210,13 @@ export default function FinalCTASection() {
           </Card>
         </div>
       </div>
+
+      {/* Success Modal */}
+      <SuccessModal
+        isOpen={showSuccessModal}
+        onClose={() => setShowSuccessModal(false)}
+        userName={submittedUserName}
+      />
     </section>
   );
 }
