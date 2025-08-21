@@ -27,7 +27,7 @@ export default function Navigation() {
   const navigationLinks = [
     { href: "/", label: t("navigation.home") },
     { href: "/team", label: t("navigation.team") },
-    { href: "/case-studies", label: t("navigation.caseStudies") },
+    // { href: "/case-studies", label: t("navigation.caseStudies") }, // Hidden until we have real case studies
     { href: "/faq", label: t("navigation.faq") },
     { href: "/contact", label: t("navigation.contact") },
   ];
