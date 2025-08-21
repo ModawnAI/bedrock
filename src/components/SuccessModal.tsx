@@ -30,11 +30,11 @@ export default function SuccessModal({ isOpen, onClose, userName }: SuccessModal
           </div>
           
           <DialogTitle className="text-xl font-bold">
-            Thank You{userName ? `, ${userName.split(' ')[0]}` : ''}! 🎉
+            {userName ? t("successModal.titleWithName").replace("{name}", userName.split(' ')[0]) : t("successModal.title")}
           </DialogTitle>
           
           <DialogDescription className="text-base text-muted-foreground">
-            Your demo request has been successfully submitted.
+            {t("successModal.description")}
           </DialogDescription>
         </DialogHeader>
 
@@ -54,20 +54,20 @@ export default function SuccessModal({ isOpen, onClose, userName }: SuccessModal
           <div className="rounded-lg bg-muted/50 p-4">
             <h4 className="font-semibold mb-3 flex items-center">
               <Calendar className="h-4 w-4 mr-2 text-primary" />
-              What happens next:
+              {t("successModal.nextSteps.title")}
             </h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li className="flex items-start">
                 <MessageSquare className="h-4 w-4 mr-2 mt-0.5 text-secondary flex-shrink-0" />
-                <span>We'll reach out within <strong>one business day</strong> to schedule your personalized demo</span>
+                <span dangerouslySetInnerHTML={{ __html: t("successModal.nextSteps.items.0").replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />
               </li>
               <li className="flex items-start">
                 <Zap className="h-4 w-4 mr-2 mt-0.5 text-secondary flex-shrink-0" />
-                <span>Our team will prepare a <strong>custom solution preview</strong> based on your specific challenges</span>
+                <span dangerouslySetInnerHTML={{ __html: t("successModal.nextSteps.items.1").replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />
               </li>
               <li className="flex items-start">
                 <CheckCircle className="h-4 w-4 mr-2 mt-0.5 text-secondary flex-shrink-0" />
-                <span>No pressure, no obligation—just a <strong>clear path forward</strong> for your business</span>
+                <span dangerouslySetInnerHTML={{ __html: t("successModal.nextSteps.items.2").replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />
               </li>
             </ul>
           </div>
@@ -75,10 +75,10 @@ export default function SuccessModal({ isOpen, onClose, userName }: SuccessModal
           {/* CTA */}
           <div className="text-center pt-2">
             <p className="text-sm text-muted-foreground mb-4">
-              Questions in the meantime? Feel free to reach out directly.
+              {t("successModal.footer.question")}
             </p>
             <Button onClick={onClose} className="w-full">
-              Continue Exploring
+              {t("successModal.footer.button")}
             </Button>
           </div>
         </div>

@@ -89,6 +89,7 @@
   },
   "caseStudies": {
     "title": "Real AI Solutions That Transformed Real Businesses",
+    "subtitle": "See how we've helped service industry leaders eliminate operational headaches and unlock measurable growth with custom AI tools built specifically for their unique challenges.",
     "items": {
       "landscaping": {
         "title": "Voice-Activated Proposal Generator",
@@ -210,27 +211,51 @@
     }
   },
   "contact": {
-    "title": "Ready to Transform Your Business?",
-    "subtitle": "Get a free demo of custom AI solutions built specifically for your industry.",
+    "title": "Your Transformation Starts Here. See What a Custom AI Could Do For You.",
+    "subtitle": "Tell us about your biggest operational headache. We'll show you how to solve it with a free, no-obligation custom demo.",
     "form": {
-      "name": "Full Name",
-      "email": "Email Address",
-      "company": "Company Name",
-      "message": "Tell us about your biggest operational challenge",
-      "submit": "Request My Free Demo",
-      "submitting": "Sending...",
-      "success": "Thank you! We'll be in touch within 24 hours.",
-      "error": "Something went wrong. Please try again."
+      "fullName": {
+        "label": "Full Name *",
+        "placeholder": "Enter your full name"
+      },
+      "companyName": {
+        "label": "Company Name *",
+        "placeholder": "Enter your company name"
+      },
+      "role": {
+        "label": "Your Role/Title *",
+        "placeholder": "e.g., CEO, Operations Manager, Owner"
+      },
+      "workEmail": {
+        "label": "Work Email *",
+        "placeholder": "Enter your work email"
+      },
+      "challenge": {
+        "label": "What's the main operational challenge you want to solve? *",
+        "placeholder": "Describe your biggest operational headache..."
+      },
+      "submit": "Get My Free Demo",
+      "submitting": "Submitting...",
+      "error": "There was an error submitting the form. Please try again."
     },
-    "info": {
-      "title": "Get in Touch",
-      "email": "team@bedrock-innovations.com",
-      "response": "We typically respond within 24 hours"
+    "disclaimer": "We'll get back to you within one business day to schedule a brief, no-pressure discovery call. We will never share your information or send you spam.",
+    "legal": "Terms of service and privacy policy. We reassure whatever they share we won't share with other competitors."
+  },
+  "successModal": {
+    "title": "Thank You",
+    "titleWithName": "Thank You, {name}! 🎉",
+    "description": "Your demo request has been successfully submitted.",
+    "nextSteps": {
+      "title": "What happens next:",
+      "items": [
+        "We'll reach out within **one business day** to schedule your personalized demo",
+        "Our team will prepare a **custom solution preview** based on your specific challenges",
+        "No pressure, no obligation—just a **clear path forward** for your business"
+      ]
     },
-    "legal": {
-      "terms": "Terms of service",
-      "privacy": "privacy policy",
-      "text": "By submitting this form, you agree to our {terms} and {privacy}."
+    "footer": {
+      "question": "Questions in the meantime? Feel free to reach out directly.",
+      "button": "Continue Exploring"
     }
   },
   "metadata": {

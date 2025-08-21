@@ -23,7 +23,7 @@ export default function CaseStudiesSection() {
             {t("caseStudies.title")}
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            See how we&apos;ve helped service industry leaders eliminate operational headaches and unlock measurable growth with custom AI tools built specifically for their unique challenges.
+            {t("caseStudies.subtitle")}
           </p>
         </div>
         
@@ -36,8 +36,8 @@ export default function CaseStudiesSection() {
                   <Mic className="text-primary w-6 h-6" />
                 </div>
                 <div>
-                  <CardTitle className="text-lg sm:text-xl">Voice-to-Proposal</CardTitle>
-                  <CardDescription className="text-xs sm:text-sm">Commercial landscaping company</CardDescription>
+                  <CardTitle className="text-lg sm:text-xl">{t("caseStudies.items.landscaping.title")}</CardTitle>
+                  <CardDescription className="text-xs sm:text-sm">{t("caseStudies.items.landscaping.industry")}</CardDescription>
                 </div>
               </div>
             </CardHeader>
@@ -48,9 +48,9 @@ export default function CaseStudiesSection() {
                     <AlertTriangle className="text-destructive w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-sm sm:text-base mb-2">The Challenge</h4>
+                    <h4 className="font-semibold text-sm sm:text-base mb-2">{t("caseStudies.items.landscaping.challenge.title")}</h4>
                     <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                      Spending 3+ hours creating detailed proposals for each potential client, including site measurements, plant selections, labor estimates, and timeline projections. The manual process was error-prone and prevented the team from bidding on more projects.
+                      {t("caseStudies.items.landscaping.challenge.description")}
                     </p>
                   </div>
                 </div>
@@ -60,9 +60,9 @@ export default function CaseStudiesSection() {
                     <Lightbulb className="text-primary w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-sm sm:text-base mb-2">Our Solution</h4>
+                    <h4 className="font-semibold text-sm sm:text-base mb-2">{t("caseStudies.items.landscaping.solution.title")}</h4>
                     <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                      Voice-activated AI that generates comprehensive proposals in minutes. The owner simply walks the property, describes the scope via voice notes, and our AI instantly creates professional proposals with accurate pricing, timelines, and detailed specifications.
+                      {t("caseStudies.items.landscaping.solution.description")}
                     </p>
                   </div>
                 </div>
@@ -72,12 +72,10 @@ export default function CaseStudiesSection() {
                     <Target className="text-secondary w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-sm sm:text-base mb-2">The Impact</h4>
-                    <ul className="text-muted-foreground text-sm sm:text-base leading-relaxed space-y-1">
-                      <li>• <strong>90% reduction</strong> in proposal time</li>
-                      <li>• <strong>40% increase</strong> in bid volume</li>
-                      <li>• <strong>25% higher win rate</strong> due to faster response times and more competitive pricing</li>
-                    </ul>
+                    <h4 className="font-semibold text-sm sm:text-base mb-2">{t("caseStudies.items.landscaping.result.title")}</h4>
+                    <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
+                      {t("caseStudies.items.landscaping.result.description")}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -92,8 +90,8 @@ export default function CaseStudiesSection() {
                   <Package className="text-secondary w-6 h-6" />
                 </div>
                 <div>
-                  <CardTitle className="text-lg sm:text-xl">Automated Materials Tracking</CardTitle>
-                  <CardDescription className="text-xs sm:text-sm">Residential construction firm</CardDescription>
+                  <CardTitle className="text-lg sm:text-xl">{t("caseStudies.items.construction.title")}</CardTitle>
+                  <CardDescription className="text-xs sm:text-sm">{t("caseStudies.items.construction.industry")}</CardDescription>
                 </div>
               </div>
             </CardHeader>
@@ -104,9 +102,9 @@ export default function CaseStudiesSection() {
                     <AlertTriangle className="text-destructive w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-sm sm:text-base mb-2">The Challenge</h4>
+                    <h4 className="font-semibold text-sm sm:text-base mb-2">{t("caseStudies.items.construction.challenge.title")}</h4>
                     <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                      Manual inventory tracking leading to project delays and cost overruns. The team was constantly running out of materials mid-project or over-ordering, tying up cash flow and storage space.
+                      {t("caseStudies.items.construction.challenge.description")}
                     </p>
                   </div>
                 </div>
@@ -116,9 +114,9 @@ export default function CaseStudiesSection() {
                     <Lightbulb className="text-primary w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-sm sm:text-base mb-2">Our Solution</h4>
+                    <h4 className="font-semibold text-sm sm:text-base mb-2">{t("caseStudies.items.construction.solution.title")}</h4>
                     <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                      AI-powered inventory management with predictive ordering. The system tracks usage patterns, predicts material needs for upcoming projects, and automatically generates purchase orders with preferred suppliers.
+                      {t("caseStudies.items.construction.solution.description")}
                     </p>
                   </div>
                 </div>
@@ -128,12 +126,10 @@ export default function CaseStudiesSection() {
                     <Target className="text-secondary w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-sm sm:text-base mb-2">The Impact</h4>
-                    <ul className="text-muted-foreground text-sm sm:text-base leading-relaxed space-y-1">
-                      <li>• <strong>25% reduction</strong> in material costs</li>
-                      <li>• <strong>Zero stockouts</strong> in 6 months</li>
-                      <li>• <strong>Improved cash flow</strong> through optimized ordering schedules</li>
-                    </ul>
+                    <h4 className="font-semibold text-sm sm:text-base mb-2">{t("caseStudies.items.construction.result.title")}</h4>
+                    <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
+                      {t("caseStudies.items.construction.result.description")}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -148,8 +144,8 @@ export default function CaseStudiesSection() {
                   <Users className="text-primary w-6 h-6" />
                 </div>
                 <div>
-                  <CardTitle className="text-lg sm:text-xl">AI Sales Development Rep</CardTitle>
-                  <CardDescription className="text-xs sm:text-sm">Field services company</CardDescription>
+                  <CardTitle className="text-lg sm:text-xl">{t("caseStudies.items.hvac.title")}</CardTitle>
+                  <CardDescription className="text-xs sm:text-sm">{t("caseStudies.items.hvac.industry")}</CardDescription>
                 </div>
               </div>
             </CardHeader>
@@ -160,9 +156,9 @@ export default function CaseStudiesSection() {
                     <AlertTriangle className="text-destructive w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-sm sm:text-base mb-2">The Challenge</h4>
+                    <h4 className="font-semibold text-sm sm:text-base mb-2">{t("caseStudies.items.hvac.challenge.title")}</h4>
                     <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                      Inconsistent lead follow-up and qualification. The sales team was overwhelmed with inbound leads and struggled to prioritize and nurture prospects effectively, leading to lost opportunities.
+                      {t("caseStudies.items.hvac.challenge.description")}
                     </p>
                   </div>
                 </div>
@@ -172,9 +168,9 @@ export default function CaseStudiesSection() {
                     <Lightbulb className="text-primary w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-sm sm:text-base mb-2">Our Solution</h4>
+                    <h4 className="font-semibold text-sm sm:text-base mb-2">{t("caseStudies.items.hvac.solution.title")}</h4>
                     <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                      AI-powered sales development representative that automatically qualifies leads, schedules appointments, and maintains consistent follow-up sequences. The system integrates with existing CRM and communication tools.
+                      {t("caseStudies.items.hvac.solution.description")}
                     </p>
                   </div>
                 </div>
@@ -184,12 +180,10 @@ export default function CaseStudiesSection() {
                     <Target className="text-secondary w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-sm sm:text-base mb-2">The Impact</h4>
-                    <ul className="text-muted-foreground text-sm sm:text-base leading-relaxed space-y-1">
-                      <li>• <strong>300% increase</strong> in qualified appointments</li>
-                      <li>• <strong>45% improvement</strong> in lead-to-customer conversion rate</li>
-                      <li>• <strong>Freed up 15 hours per week</strong> for the sales team to focus on closing deals</li>
-                    </ul>
+                    <h4 className="font-semibold text-sm sm:text-base mb-2">{t("caseStudies.items.hvac.result.title")}</h4>
+                    <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
+                      {t("caseStudies.items.hvac.result.description")}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -204,8 +198,8 @@ export default function CaseStudiesSection() {
                   <Search className="text-secondary w-6 h-6" />
                 </div>
                 <div>
-                  <CardTitle className="text-lg sm:text-xl">Customized Client Discovery Tools</CardTitle>
-                  <CardDescription className="text-xs sm:text-sm">Construction services provider</CardDescription>
+                  <CardTitle className="text-lg sm:text-xl">{t("caseStudies.items.cleaning.title")}</CardTitle>
+                  <CardDescription className="text-xs sm:text-sm">{t("caseStudies.items.cleaning.industry")}</CardDescription>
                 </div>
               </div>
             </CardHeader>
@@ -216,9 +210,9 @@ export default function CaseStudiesSection() {
                     <AlertTriangle className="text-destructive w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-sm sm:text-base mb-2">The Challenge</h4>
+                    <h4 className="font-semibold text-sm sm:text-base mb-2">{t("caseStudies.items.cleaning.challenge.title")}</h4>
                     <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                      Lengthy client discovery process that often missed critical requirements, leading to scope creep, change orders, and client dissatisfaction. Initial consultations were taking 2-3 hours with inconsistent information gathering.
+                      {t("caseStudies.items.cleaning.challenge.description")}
                     </p>
                   </div>
                 </div>
@@ -228,9 +222,9 @@ export default function CaseStudiesSection() {
                     <Lightbulb className="text-primary w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-sm sm:text-base mb-2">Our Solution</h4>
+                    <h4 className="font-semibold text-sm sm:text-base mb-2">{t("caseStudies.items.cleaning.solution.title")}</h4>
                     <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                      Interactive AI-powered discovery tool that guides clients through a comprehensive questionnaire, automatically identifies potential issues, and generates detailed project specifications and accurate cost estimates.
+                      {t("caseStudies.items.cleaning.solution.description")}
                     </p>
                   </div>
                 </div>
@@ -240,12 +234,10 @@ export default function CaseStudiesSection() {
                     <Target className="text-secondary w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-sm sm:text-base mb-2">The Impact</h4>
-                    <ul className="text-muted-foreground text-sm sm:text-base leading-relaxed space-y-1">
-                      <li>• <strong>60% reduction</strong> in discovery time</li>
-                      <li>• <strong>80% fewer</strong> change orders</li>
-                      <li>• <strong>35% increase</strong> in client satisfaction scores due to more accurate initial scoping</li>
-                    </ul>
+                    <h4 className="font-semibold text-sm sm:text-base mb-2">{t("caseStudies.items.cleaning.result.title")}</h4>
+                    <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
+                      {t("caseStudies.items.cleaning.result.description")}
+                    </p>
                   </div>
                 </div>
               </div>

@@ -89,6 +89,7 @@
   },
   "caseStudies": {
     "title": "Echte KI-Lösungen, die echte Unternehmen transformiert haben",
+    "subtitle": "Sehen Sie, wie wir Führungskräften der Dienstleistungsbranche dabei geholfen haben, operative Probleme zu beseitigen und messbares Wachstum mit maßgeschneiderten KI-Tools zu erzielen, die speziell für ihre einzigartigen Herausforderungen entwickelt wurden.",
     "items": {
       "landscaping": {
         "title": "Sprachaktivierter Angebotsgenerator",
@@ -210,27 +211,51 @@
     }
   },
   "contact": {
-    "title": "Bereit, Ihr Unternehmen zu transformieren?",
-    "subtitle": "Erhalten Sie eine kostenlose Demo von maßgeschneiderten KI-Lösungen, die speziell für Ihre Branche entwickelt wurden.",
+    "title": "Ihre Transformation beginnt hier. Sehen Sie, was eine maßgeschneiderte KI für Sie tun könnte.",
+    "subtitle": "Erzählen Sie uns von Ihrem größten operativen Problem. Wir zeigen Ihnen, wie Sie es mit einer kostenlosen, unverbindlichen maßgeschneiderten Demo lösen können.",
     "form": {
-      "name": "Vollständiger Name",
-      "email": "E-Mail-Adresse",
-      "company": "Firmenname",
-      "message": "Erzählen Sie uns von Ihrer größten operativen Herausforderung",
-      "submit": "Kostenlose Demo anfordern",
-      "submitting": "Wird gesendet...",
-      "success": "Vielen Dank! Wir melden uns innerhalb von 24 Stunden bei Ihnen.",
-      "error": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut."
+      "fullName": {
+        "label": "Vollständiger Name *",
+        "placeholder": "Geben Sie Ihren vollständigen Namen ein"
+      },
+      "companyName": {
+        "label": "Firmenname *",
+        "placeholder": "Geben Sie Ihren Firmennamen ein"
+      },
+      "role": {
+        "label": "Ihre Rolle/Position *",
+        "placeholder": "z.B. CEO, Betriebsleiter, Inhaber"
+      },
+      "workEmail": {
+        "label": "Geschäftliche E-Mail *",
+        "placeholder": "Geben Sie Ihre geschäftliche E-Mail ein"
+      },
+      "challenge": {
+        "label": "Was ist die hauptsächliche operative Herausforderung, die Sie lösen möchten? *",
+        "placeholder": "Beschreiben Sie Ihr größtes operatives Problem..."
+      },
+      "submit": "Kostenlose Demo erhalten",
+      "submitting": "Wird übermittelt...",
+      "error": "Beim Absenden des Formulars ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
     },
-    "info": {
-      "title": "Kontakt aufnehmen",
-      "email": "team@bedrock-innovations.com",
-      "response": "Wir antworten normalerweise innerhalb von 24 Stunden"
+    "disclaimer": "Wir melden uns innerhalb eines Werktages bei Ihnen, um ein kurzes, unverbindliches Beratungsgespräch zu vereinbaren. Wir werden Ihre Informationen niemals weitergeben oder Ihnen Spam senden.",
+    "legal": "Nutzungsbedingungen und Datenschutzrichtlinie. Wir versichern, dass wir alles, was Sie mit uns teilen, nicht mit anderen Wettbewerbern teilen werden."
+  },
+  "successModal": {
+    "title": "Vielen Dank",
+    "titleWithName": "Vielen Dank, {name}! 🎉",
+    "description": "Ihre Demo-Anfrage wurde erfolgreich übermittelt.",
+    "nextSteps": {
+      "title": "Was passiert als nächstes:",
+      "items": [
+        "Wir melden uns innerhalb **eines Werktages** bei Ihnen, um Ihre personalisierte Demo zu planen",
+        "Unser Team bereitet eine **maßgeschneiderte Lösungsvorschau** basierend auf Ihren spezifischen Herausforderungen vor",
+        "Kein Druck, keine Verpflichtung—nur ein **klarer Weg nach vorn** für Ihr Unternehmen"
+      ]
     },
-    "legal": {
-      "terms": "Nutzungsbedingungen",
-      "privacy": "Datenschutzrichtlinie",
-      "text": "Durch das Absenden dieses Formulars stimmen Sie unseren {terms} und {privacy} zu."
+    "footer": {
+      "question": "Fragen in der Zwischenzeit? Zögern Sie nicht, uns direkt zu kontaktieren.",
+      "button": "Weiter erkunden"
     }
   },
   "metadata": {

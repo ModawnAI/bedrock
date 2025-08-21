@@ -28,100 +28,100 @@ export default function FAQSection() {
             
             <AccordionItem value="data-security" className="bg-card border rounded-lg hover:shadow-md transition-shadow px-4 sm:px-6">
               <AccordionTrigger className="text-sm sm:text-base font-semibold">
-                What happens to our data?
+                {t("faq.items.data.question")}
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                Your data stays yours. We never keep, store, or use your data for any other purpose. All data processing happens within your secure environment, and we sign comprehensive NDAs before any project begins.
+                {t("faq.items.data.answer")}
               </AccordionContent>
             </AccordionItem>
             
             <AccordionItem value="pricing" className="bg-card border rounded-lg hover:shadow-md transition-shadow px-4 sm:px-6">
               <AccordionTrigger className="text-sm sm:text-base font-semibold">
-                How much does a custom solution cost?
+                {t("faq.items.pricing.question")}
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                Every project is different, so we provide custom pricing based on your specific needs. Most clients see ROI within the first year. We&apos;ll give you a detailed cost breakdown after our discovery call, with no hidden fees or surprises.
+                {t("faq.items.pricing.answer")}
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="industries" className="bg-card border rounded-lg hover:shadow-md transition-shadow px-4 sm:px-6">
               <AccordionTrigger className="text-sm sm:text-base font-semibold">
-                What industries do you specialize in?
+                {t("faq.items.industries.question")}
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                We focus on service industries including landscaping, construction, field services, and residential services. Our team has hands-on experience in these sectors, so we understand the unique operational challenges and can build solutions that actually work in the field.
+                {t("faq.items.industries.answer")}
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="team-expertise" className="bg-card border rounded-lg hover:shadow-md transition-shadow px-4 sm:px-6">
               <AccordionTrigger className="text-sm sm:text-base font-semibold">
-                What makes your team different from other software developers?
+                {t("faq.items.team.question")}
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                We build better, easier-to-use technology than legacy software developers because our tech is AI-native and we work with you hand-in-hand every step of the way. Our team combines top-tier consulting experience (Bain & Company), enterprise software expertise (Salesforce), and precision engineering (Porsche), with real operational experience in service industries.
+                {t("faq.items.team.answer")}
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="ai-technology" className="bg-card border rounded-lg hover:shadow-md transition-shadow px-4 sm:px-6">
               <AccordionTrigger className="text-sm sm:text-base font-semibold">
-                What AI technologies do you use?
+                {t("faq.items.technology.question")}
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                We use proven, enterprise-grade AI tools rather than experimental technology. This includes advanced language models for automation, computer vision for field documentation, and predictive analytics for operational optimization. We focus on practical AI that delivers immediate ROI, not research projects.
+                {t("faq.items.technology.answer")}
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="integration" className="bg-card border rounded-lg hover:shadow-md transition-shadow px-4 sm:px-6">
               <AccordionTrigger className="text-sm sm:text-base font-semibold">
-                Will this integrate with our existing software?
+                {t("faq.items.integration.question")}
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                Yes, seamless integration is a core part of our approach. We connect with your existing CRM, accounting software, scheduling tools, and other systems. Our goal is to enhance your current workflow, not replace everything you&apos;re already using effectively.
+                {t("faq.items.integration.answer")}
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="support" className="bg-card border rounded-lg hover:shadow-md transition-shadow px-4 sm:px-6">
               <AccordionTrigger className="text-sm sm:text-base font-semibold">
-                What kind of ongoing support do you provide?
+                {t("faq.items.support.question")}
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                We provide comprehensive training for your team, detailed documentation, and ongoing technical support. You&apos;ll have direct access to our development team for questions, updates, and optimizations. We&apos;re invested in your long-term success, not just the initial implementation.
+                {t("faq.items.support.answer")}
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="demo-process" className="bg-card border rounded-lg hover:shadow-md transition-shadow px-4 sm:px-6">
               <AccordionTrigger className="text-sm sm:text-base font-semibold">
-                What happens during the demo process?
+                {t("faq.items.demo.question")}
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                We start with a discovery call to understand your specific challenges, then build a working demo using your actual business scenarios within 5 business days. This isn&apos;t a generic presentation—it&apos;s a functional prototype tailored to your operations that you can test with real data.
+                {t("faq.items.demo.answer")}
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="roi-timeline" className="bg-card border rounded-lg hover:shadow-md transition-shadow px-4 sm:px-6">
               <AccordionTrigger className="text-sm sm:text-base font-semibold">
-                How quickly will we see return on investment?
+                {t("faq.items.roi.question")}
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                Most clients see measurable improvements within the first month of implementation. Based on our case studies, typical results include 25-90% time savings on key processes, 25-45% improvement in conversion rates, and significant cost reductions. Full ROI is usually achieved within 6-12 months.
+                {t("faq.items.roi.answer")}
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="maintenance" className="bg-card border rounded-lg hover:shadow-md transition-shadow px-4 sm:px-6">
               <AccordionTrigger className="text-sm sm:text-base font-semibold">
-                Do we need technical staff to maintain the AI solution?
+                {t("faq.items.maintenance.question")}
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                No technical expertise required. We design our solutions to be user-friendly and self-maintaining. Your team will receive comprehensive training on daily operations, and we handle all technical maintenance, updates, and optimizations remotely. You focus on your business, we handle the technology.
+                {t("faq.items.maintenance.answer")}
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="scalability" className="bg-card border rounded-lg hover:shadow-md transition-shadow px-4 sm:px-6">
               <AccordionTrigger className="text-sm sm:text-base font-semibold">
-                Can the solution grow with our business?
+                {t("faq.items.scalability.question")}
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                Absolutely. We build scalable solutions that adapt to your growth. Whether you&apos;re expanding to new locations, adding services, or increasing team size, our AI systems are designed to scale seamlessly. We can also add new features and capabilities as your business evolves.
+                {t("faq.items.scalability.answer")}
               </AccordionContent>
             </AccordionItem>
           </Accordion>

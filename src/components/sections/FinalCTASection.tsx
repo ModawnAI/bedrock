@@ -65,7 +65,7 @@ export default function FinalCTASection() {
       form.reset();
     } catch (error) {
       console.error("Form submission error:", error);
-      alert("There was an error submitting the form. Please try again.");
+      alert(t("contact.form.error"));
     }
   };
 
@@ -75,10 +75,10 @@ export default function FinalCTASection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center max-w-6xl mx-auto">
           <div className="text-center lg:text-left">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight">
-              Your Transformation Starts Here. See What a Custom AI Could Do For You.
+              {t("contact.title")}
             </h2>
             <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8 leading-relaxed">
-              Tell us about your biggest operational headache. We&apos;ll show you how to solve it with a free, no-obligation custom demo.
+              {t("contact.subtitle")}
             </p>
           </div>
           
@@ -92,11 +92,11 @@ export default function FinalCTASection() {
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel className="text-xs sm:text-sm">
-                          Full Name *
+                          {t("contact.form.fullName.label")}
                         </FormLabel>
                         <FormControl>
                           <Input
-                            placeholder="Enter your full name"
+                            placeholder={t("contact.form.fullName.placeholder")}
                             className="text-sm sm:text-base"
                             {...field}
                           />
@@ -112,11 +112,11 @@ export default function FinalCTASection() {
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel className="text-xs sm:text-sm">
-                          Company Name *
+                          {t("contact.form.companyName.label")}
                         </FormLabel>
                         <FormControl>
                           <Input
-                            placeholder="Enter your company name"
+                            placeholder={t("contact.form.companyName.placeholder")}
                             className="text-sm sm:text-base"
                             {...field}
                           />
@@ -132,11 +132,11 @@ export default function FinalCTASection() {
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel className="text-xs sm:text-sm">
-                          Your Role/Title *
+                          {t("contact.form.role.label")}
                         </FormLabel>
                         <FormControl>
                           <Input
-                            placeholder="e.g., CEO, Operations Manager, Owner"
+                            placeholder={t("contact.form.role.placeholder")}
                             className="text-sm sm:text-base"
                             {...field}
                           />
@@ -152,12 +152,12 @@ export default function FinalCTASection() {
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel className="text-xs sm:text-sm">
-                          Work Email *
+                          {t("contact.form.workEmail.label")}
                         </FormLabel>
                         <FormControl>
                           <Input
                             type="email"
-                            placeholder="Enter your work email"
+                            placeholder={t("contact.form.workEmail.placeholder")}
                             className="text-sm sm:text-base"
                             {...field}
                           />
@@ -173,12 +173,12 @@ export default function FinalCTASection() {
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel className="text-xs sm:text-sm">
-                          What&apos;s the main operational challenge you want to solve? *
+                          {t("contact.form.challenge.label")}
                         </FormLabel>
                         <FormControl>
                           <Textarea
                             rows={4}
-                            placeholder="Describe your biggest operational headache..."
+                            placeholder={t("contact.form.challenge.placeholder")}
                             className="resize-none text-sm sm:text-base"
                             {...field}
                           />
@@ -194,15 +194,15 @@ export default function FinalCTASection() {
                     className="w-full text-sm sm:text-base py-3 sm:py-4 h-auto shadow-lg"
                     disabled={form.formState.isSubmitting}
                   >
-                    {form.formState.isSubmitting ? "Submitting..." : "Get My Free Demo"}
+                    {form.formState.isSubmitting ? t("contact.form.submitting") : t("contact.form.submit")}
                   </Button>
                   
                   <p className="text-xs sm:text-sm text-muted-foreground text-center leading-relaxed">
-                    We&apos;ll get back to you within one business day to schedule a brief, no-pressure discovery call. We will never share your information or send you spam.
+                    {t("contact.disclaimer")}
                   </p>
                   
                   <p className="text-xs text-muted-foreground text-center leading-relaxed">
-                    <a href="/terms" className="underline hover:no-underline">Terms of service</a> and <a href="/privacy" className="underline hover:no-underline">privacy policy</a>. We reassure whatever they share we won&apos;t share with other competitors.
+                    <a href="/terms" className="underline hover:no-underline">Terms of service</a> and <a href="/privacy" className="underline hover:no-underline">privacy policy</a>. {t("contact.legal")}
                   </p>
                 </form>
               </Form>
