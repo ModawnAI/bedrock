@@ -5,7 +5,7 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useLanguage, Language, languageFlags, languageNames } from "@/lib/i18n";
+import { useLanguage, Language, languageCodes, languageNames } from "@/lib/i18n";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -101,7 +101,7 @@ export default function Navigation() {
               
               {isLanguageDropdownOpen && (
                 <div className="absolute right-0 mt-2 w-48 bg-background border border-border rounded-md shadow-lg z-50">
-                  {(Object.keys(languageFlags) as Language[]).map((lang) => (
+                  {(Object.keys(languageCodes) as Language[]).map((lang) => (
                     <button
                       key={lang}
                       onClick={() => handleLanguageChange(lang)}
@@ -109,7 +109,7 @@ export default function Navigation() {
                         language === lang ? "bg-muted text-foreground" : "text-muted-foreground"
                       }`}
                     >
-                      <span className="text-lg">{languageFlags[lang]}</span>
+                      <span className="text-xs font-bold bg-muted px-2 py-1 rounded">{languageCodes[lang]}</span>
                       <span className="text-sm font-medium">{languageNames[lang]}</span>
                     </button>
                   ))}
@@ -161,7 +161,7 @@ export default function Navigation() {
               <div className="px-4 py-2 border-t border-border/50 mt-2 pt-4">
                 <div className="text-sm font-medium text-muted-foreground mb-2">Language</div>
                 <div className="grid grid-cols-3 gap-2">
-                  {(Object.keys(languageFlags) as Language[]).map((lang) => (
+                  {(Object.keys(languageCodes) as Language[]).map((lang) => (
                     <button
                       key={lang}
                       onClick={() => {
@@ -170,11 +170,15 @@ export default function Navigation() {
                       }}
                       className={`flex flex-col items-center space-y-1 p-2 rounded-md transition-colors ${
                         language === lang 
-                          ? "bg-primary text-primary-foreground" 
+                          ? "bg-muted text-foreground border-2 border-primary" 
                           : "hover:bg-muted text-muted-foreground"
                       }`}
                     >
-                      <span className="text-lg">{languageFlags[lang]}</span>
+                      <span className={`text-xs font-bold px-2 py-1 rounded ${
+                        language === lang 
+                          ? "bg-primary text-primary-foreground" 
+                          : "bg-muted text-foreground"
+                      }`}>{languageCodes[lang]}</span>
                       <span className="text-xs font-medium">{languageNames[lang]}</span>
                     </button>
                   ))}

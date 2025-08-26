@@ -95,6 +95,12 @@ export const languageNames = {
   de: 'Deutsch',
 };
 
+export const languageCodes = {
+  en: 'EN',
+  ko: 'KO',
+  de: 'DE',
+};
+
 export const languageFlags = {
   en: '🇺🇸',
   ko: '🇰🇷', 
