@@ -174,7 +174,11 @@
       },
       "industries": {
         "question": "Auf welche Branchen spezialisieren Sie sich?",
-        "answer": "Wir konzentrieren uns auf Dienstleistungsbranchen einschließlich Landschaftsbau, Bauwesen, Außendienst und Wohndienstleistungen. Unser Team hat praktische Erfahrung in diesen Sektoren, sodass wir die einzigartigen operativen Herausforderungen verstehen und Lösungen entwickeln können, die tatsächlich im Feld funktionieren."
+        "answer": "Wir konzentrieren uns auf Dienstleistungsbranchen einschließlich Bauwesen, Außendienst und Wohndienstleistungen. Unser Team hat praktische Erfahrung in diesen Sektoren, sodass wir die einzigartigen operativen Herausforderungen verstehen und Lösungen entwickeln können, die tatsächlich im Feld funktionieren."
+      },
+      "landscaping": {
+        "question": "Spezialisieren Sie sich speziell auf Landschaftsbauunternehmen?",
+        "answer": "Ja, wir haben tiefgreifende Expertise in der Landschaftsbaubranche. Unser Team hat direkte operative Erfahrung in Landschaftsbauunternehmen, sodass wir die einzigartigen Herausforderungen wie saisonale Arbeitsabläufe, Wetterabhängigkeiten, Kundenstandortverwaltung und Angebotserstellung verstehen. Wir haben spezialisierte Lösungen für Landschaftsbauunternehmen entwickelt, die diese spezifischen Bedürfnisse adressieren."
       },
       "team": {
         "question": "Was macht Ihr Team anders als andere Softwareentwickler?",
@@ -261,7 +265,7 @@
   "metadata": {
     "home": {
       "title": "Bedrock Innovations - Maßgeschneiderte KI-Lösungen für Dienstleistungsbranchen",
-      "description": "Wir entwickeln maßgeschneiderte, durchgängige KI-Lösungen für Führungskräfte in der Dienstleistungsbranche in Landschaftsbau, Bauwesen und Außendienst, die müde von klobigen, überteuerten Systemen sind, die nicht schnell genug innovieren."
+      "description": "Wir entwickeln maßgeschneiderte, durchgängige KI-Lösungen für Führungskräfte in der Dienstleistungsbranche in Bauwesen, Außendienst und Wohndienstleistungen, die müde von klobigen, überteuerten Systemen sind, die nicht schnell genug innovieren."
     },
     "team": {
       "title": "Unser Team - Bedrock Innovations",
@@ -269,15 +273,15 @@
     },
     "caseStudies": {
       "title": "Fallstudien - Bedrock Innovations",
-      "description": "Sehen Sie echte KI-Lösungen, die echte Unternehmen transformiert haben. Entdecken Sie, wie wir Landschaftsbau-, Bau- und Außendienstunternehmen geholfen haben, Kosten zu senken, Zeit zu sparen und Abläufe zu optimieren."
+      "description": "Sehen Sie echte KI-Lösungen, die echte Unternehmen transformiert haben. Entdecken Sie, wie wir Bau-, Außendienst- und Wohndienstleistungsunternehmen geholfen haben, Kosten zu senken, Zeit zu sparen und Abläufe zu optimieren."
     },
     "faq": {
       "title": "FAQ - Bedrock Innovations",
-      "description": "Häufig gestellte Fragen zu unseren maßgeschneiderten KI-Lösungen für Landschaftsbau, Bauwesen und Außendienst. Erfahren Sie mehr über Implementierung, Preise, Support und mehr."
+      "description": "Häufig gestellte Fragen zu unseren maßgeschneiderten KI-Lösungen für Bauwesen, Außendienst und Wohndienstleistungen. Erfahren Sie mehr über Implementierung, Preise, Support und mehr."
     },
     "contact": {
       "title": "Kontakt - Bedrock Innovations",
-      "description": "Nehmen Sie Kontakt mit Bedrock Innovations auf. Fordern Sie eine kostenlose Demo unserer maßgeschneiderten KI-Lösungen für Landschaftsbau, Bauwesen und Außendienst an."
+      "description": "Nehmen Sie Kontakt mit Bedrock Innovations auf. Fordern Sie eine kostenlose Demo unserer maßgeschneiderten KI-Lösungen für Bauwesen, Außendienst und Wohndienstleistungen an."
     }
   }
 }

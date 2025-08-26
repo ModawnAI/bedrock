@@ -94,7 +94,7 @@ export default function Navigation() {
                 aria-expanded={isLanguageDropdownOpen}
                 aria-label="Select language"
               >
-                <span className="text-lg">{languageFlags[language]}</span>
+                <span className="text-xs font-bold bg-muted px-2 py-1 rounded">{languageCodes[language]}</span>
                 <span className="text-sm font-medium">{languageNames[language]}</span>
                 <ChevronDown className="w-4 h-4" />
               </button>

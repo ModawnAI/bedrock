@@ -174,7 +174,11 @@
       },
       "industries": {
         "question": "What industries do you specialize in?",
-        "answer": "We focus on service industries including landscaping, construction, field services, and residential services. Our team has hands-on experience in these sectors, so we understand the unique operational challenges and can build solutions that actually work in the field."
+        "answer": "We focus on service industries including construction, field services, and residential services. Our team has hands-on experience in these sectors, so we understand the unique operational challenges and can build solutions that actually work in the field."
+      },
+      "landscaping": {
+        "question": "Do you specialize specifically in landscaping businesses?",
+        "answer": "Yes, we have deep expertise in the landscaping industry. Our team has direct operational experience in landscaping businesses, so we understand the unique challenges like seasonal workflows, weather dependencies, client site management, and proposal generation. We've built specialized solutions for landscaping companies that address these specific needs."
       },
       "team": {
         "question": "What makes your team different from other software developers?",
@@ -261,7 +265,7 @@
   "metadata": {
     "home": {
       "title": "Bedrock Innovations - Custom AI Solutions for Service Industries",
-      "description": "We build custom, end-to-end AI solutions for service industry leaders in landscaping, construction, and field services who are tired of clunky, overpriced systems that aren't innovating fast enough."
+      "description": "We build custom, end-to-end AI solutions for service industry leaders in construction, field services, and residential services who are tired of clunky, overpriced systems that aren't innovating fast enough."
     },
     "team": {
       "title": "Our Team - Bedrock Innovations",
@@ -269,15 +273,15 @@
     },
     "caseStudies": {
       "title": "Case Studies - Bedrock Innovations",
-      "description": "See real AI solutions that transformed real businesses. Discover how we've helped landscaping, construction, and field service companies cut costs, save time, and smooth operations."
+      "description": "See real AI solutions that transformed real businesses. Discover how we've helped construction, field service, and residential service companies cut costs, save time, and smooth operations."
     },
     "faq": {
       "title": "FAQ - Bedrock Innovations",
-      "description": "Frequently asked questions about our custom AI solutions for landscaping, construction, and field services. Learn about implementation, pricing, support, and more."
+      "description": "Frequently asked questions about our custom AI solutions for construction, field services, and residential services. Learn about implementation, pricing, support, and more."
     },
     "contact": {
       "title": "Contact Us - Bedrock Innovations",
-      "description": "Get in touch with Bedrock Innovations. Request a free demo of our custom AI solutions for landscaping, construction, and field services."
+      "description": "Get in touch with Bedrock Innovations. Request a free demo of our custom AI solutions for construction, field services, and residential services."
     }
   }
 }
