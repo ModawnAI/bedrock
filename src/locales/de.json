@@ -9,11 +9,11 @@
   "hero": {
     "industries": {
       "landscaping": "Landschaftsbau",
-      "construction": "Bauwesen",
-      "fieldServices": "Außendienst"
+      "automation": "Automatisierung",
+      "customAI": "Maßgeschneiderte KI"
     },
-    "title": "Hören Sie auf, gegen veraltete Software zu kämpfen. Bauen Sie Ihre Zukunft.",
-    "subtitle": "Wenn sich Ihre Software anfühlt, als wäre sie vor 10 Jahren entwickelt worden -- oder nicht schnell genug innoviert -- dann ist es Zeit für ein Upgrade.",
+    "title": "Gewinnen Sie Ihren Tag zurück und beschleunigen Sie Ihr Wachstum.",
+    "subtitle": "Wir helfen Landschaftsbauunternehmen dabei, ihre Abläufe zu optimieren und manuelle, sich wiederholende Aufgaben mit maßgeschneiderten KI-Tools zu eliminieren, die speziell für Ihre Bedürfnisse entwickelt wurden.",
     "ctaButton": "Kostenlose Demo anfordern"
   },
   "credibility": {
@@ -174,7 +174,7 @@
       },
       "industries": {
         "question": "Auf welche Branchen spezialisieren Sie sich?",
-        "answer": "Wir konzentrieren uns auf Dienstleistungsbranchen einschließlich Bauwesen, Außendienst und Wohndienstleistungen. Unser Team hat praktische Erfahrung in diesen Sektoren, sodass wir die einzigartigen operativen Herausforderungen verstehen und Lösungen entwickeln können, die tatsächlich im Feld funktionieren."
+        "answer": "Wir spezialisieren uns ausschließlich auf Landschaftsbauunternehmen. Unser Team hat tiefgreifende, praktische Erfahrung in der Landschaftsbaubranche, sodass wir die einzigartigen operativen Herausforderungen verstehen—von der Angebotserstellung und Kundenverwaltung bis hin zur Crew-Planung und saisonalen Planung. Diese fokussierte Expertise ermöglicht es uns, KI-Lösungen zu entwickeln, die tatsächlich im Feld funktionieren und sofortigen Wert für Landschaftsbauunternehmen liefern."
       },
       "landscaping": {
         "question": "Spezialisieren Sie sich speziell auf Landschaftsbauunternehmen?",

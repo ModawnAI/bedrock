@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { useABTestVariant, AB_TEST_CONFIG, trackCTAView, trackCTAClick } from "@/lib/ab-testing";
 import { useEffect } from "react";
-import { Trees, HardHat, Wrench } from "lucide-react";
+import { Trees, Bot, Wrench } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
 
 export default function HeroSection() {
@@ -33,12 +33,12 @@ export default function HeroSection() {
               <span className="text-sm text-muted-foreground font-medium">{t("hero.industries.landscaping")}</span>
             </div>
             <div className="flex flex-col items-center gap-2">
-              <HardHat className="w-12 h-12 text-primary" aria-hidden="true" />
-              <span className="text-sm text-muted-foreground font-medium">{t("hero.industries.construction")}</span>
+              <Bot className="w-12 h-12 text-primary" aria-hidden="true" />
+              <span className="text-sm text-muted-foreground font-medium">{t("hero.industries.automation")}</span>
             </div>
             <div className="flex flex-col items-center gap-2">
               <Wrench className="w-12 h-12 text-primary" aria-hidden="true" />
-              <span className="text-sm text-muted-foreground font-medium">{t("hero.industries.fieldServices")}</span>
+              <span className="text-sm text-muted-foreground font-medium">{t("hero.industries.customAI")}</span>
             </div>
           </div>
           

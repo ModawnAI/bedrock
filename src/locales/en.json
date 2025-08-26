@@ -9,11 +9,11 @@
   "hero": {
     "industries": {
       "landscaping": "Landscaping",
-      "construction": "Construction",
-      "fieldServices": "Field Services"
+      "automation": "Automation",
+      "customAI": "Custom AI"
     },
-    "title": "Stop Fighting Outdated Software. Start Building Your Future.",
-    "subtitle": "If your software feels like it was built 20 years ago -- it probably was!",
+    "title": "Reclaim your day and accelerate growth.",
+    "subtitle": "We help landscaping businesses streamline operations and eliminate manual, repetitive tasks with custom AI-powered tools built for your specific needs.",
     "ctaButton": "Request My Free Demo"
   },
   "credibility": {
@@ -174,7 +174,7 @@
       },
       "industries": {
         "question": "What industries do you specialize in?",
-        "answer": "We focus on service industries including construction, field services, and residential services. Our team has hands-on experience in these sectors, so we understand the unique operational challenges and can build solutions that actually work in the field."
+        "answer": "We specialize exclusively in landscaping companies. Our team has deep, hands-on experience in the landscaping industry, so we understand the unique operational challenges—from proposal generation and client management to crew scheduling and seasonal planning. This focused expertise allows us to build AI solutions that actually work in the field and deliver immediate value for landscaping businesses."
       },
       "landscaping": {
         "question": "Do you specialize specifically in landscaping businesses?",
