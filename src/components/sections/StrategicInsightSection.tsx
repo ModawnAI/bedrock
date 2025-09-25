@@ -1,6 +1,6 @@
 "use client"
 
-import { Brain, Target, Zap, TrendingUp } from "lucide-react";
+import { Brain, Zap, TrendingUp } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
 
 export default function StrategicInsightSection() {
@@ -14,7 +14,7 @@ export default function StrategicInsightSection() {
               <Brain className="text-primary w-8 h-8" />
             </div>
             <div className="w-16 h-16 bg-secondary/10 rounded-lg flex items-center justify-center">
-              <Target className="text-secondary w-8 h-8" />
+              <Zap className="text-secondary w-8 h-8" />
             </div>
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">

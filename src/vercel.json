@@ -3,6 +3,9 @@
   "outputDirectory": ".next",
   "installCommand": "npm install",
   "framework": "nextjs",
+  "env": {
+    "RESEND_API_KEY": "re_2zGmmm3c_HzzFvbUJcZxcJ7esecK3FUQi"
+  },
   "functions": {
     "app/api/request-demo/route.ts": {
       "maxDuration": 10
